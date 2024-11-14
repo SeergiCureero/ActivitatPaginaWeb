@@ -2,17 +2,26 @@
 let currentLang = 'es';
 
 const translations = {
-    ca : {  title:'Benvinguts a la pàgina web oficial del Montpedrosí',
-            titArt1:'Què és el Montpedrosí?',
-            titArt2:'Història',
-            AA:"S'escriu tot en majúscules i també té algunes grafíes d'altres alfabets com la 'Ñ' castellana.",
-            buttonSwitchLanguage:'CAST'
+    es : {  buttonSwitchLanguage:'CAT',
+        navBar:'navBar',
+        banner:'Bienvenidos',
+        destino1:'Italia',
+        destino2:"Mexico",
+        destino3:"Alemania"
     },
-    es : {  title:'Bienvenidos a la pagina web oficial del Montpedrosí',
-            titArt1:'Qué es el Montpedrosí?',
-            titArt2:'Historia',
-            AA:"Se escribe todo en mayúsculas y también tiene algunas grafías de otros alfabetos como la 'Ñ' castellana.",
-            buttonSwitchLanguage:'CAT'
+    ca : {  buttonSwitchLanguage:'ENG',
+            navBar:'navBar',
+            banner:'Benvinguts',
+            destino1:'Itàlia',
+            destino2:"Mèxic",
+            destino3:"Alemanya"
+    },      
+    en : {  buttonSwitchLanguage:'ESP',
+            navBar:'navBar',
+            banner:'Welcome',
+            destino1:'Italy',
+            titDestino2:"Mexico",
+            titDestino3:"Germany"
     }
 };
 
@@ -29,11 +38,12 @@ function switchLanguage() {
     }
     
     
-    //change texts
-    document.getElementById('title').innerText = translations[currentLang].title; 
-    document.getElementById('titArt1').innerText = translations[currentLang].titArt1; 
-    document.getElementById('titArt2').innerText = translations[currentLang].titArt2; 
-    document.getElementById('AA').innerText = translations[currentLang].AA;
+    //change text from elements
+    document.getElementById('navBar').innerText = translations[currentLang].navBar; 
+    document.getElementById('banner').innerText = translations[currentLang].banner; 
+    document.getElementById('destino1').innerText = translations[currentLang].destino1; 
+    document.getElementById('destino2').innerText = translations[currentLang].destino2;
+    document.getElementById('destino3').innerText = translations[currentLang].destino3;
     document.getElementById('buttonSwitchLanguage').innerText = translations[currentLang].buttonSwitchLanguage;
 } 
 
