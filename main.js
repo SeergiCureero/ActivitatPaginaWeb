@@ -3,23 +3,20 @@ let currentLang = 'es';
 
 const translations = {
     es : {  buttonSwitchLanguage:'CAT',
-        navBar:'navBar',
-        banner:'Bienvenidos',
-        destino1:'Italia',
-        destino2:"Mexico",
-        destino3:"Alemania"
+            subTitle:'Agencia de Viajes',
+            titDestino1:'Italia',
+            titDestino2:"Mexico",
+            titDestino3:"Alemania"
     },
     ca : {  buttonSwitchLanguage:'ENG',
-            navBar:'navBar',
-            banner:'Benvinguts',
-            destino1:'Itàlia',
-            destino2:"Mèxic",
-            destino3:"Alemanya"
+            subTitle:'Agencia de Viatges',
+            titDestino1:'Itàlia',
+            titDestino2:"Mèxic",
+            titDestino3:"Alemanya"
     },      
     en : {  buttonSwitchLanguage:'ESP',
-            navBar:'navBar',
-            banner:'Welcome',
-            destino1:'Italy',
+            subTitle:'Travel Agency',
+            titDestino1:'Italy',
             titDestino2:"Mexico",
             titDestino3:"Germany"
     }
@@ -39,11 +36,10 @@ function switchLanguage() {
     
     
     //change text from elements
-    document.getElementById('navBar').innerText = translations[currentLang].navBar; 
-    document.getElementById('banner').innerText = translations[currentLang].banner; 
-    document.getElementById('destino1').innerText = translations[currentLang].destino1; 
-    document.getElementById('destino2').innerText = translations[currentLang].destino2;
-    document.getElementById('destino3').innerText = translations[currentLang].destino3;
     document.getElementById('buttonSwitchLanguage').innerText = translations[currentLang].buttonSwitchLanguage;
+    document.getElementById('subTitle').innerText = translations[currentLang].subTitle; 
+    document.getElementById('titDestino1').innerText = translations[currentLang].titDestino1; 
+    document.getElementById('titDestino2').innerText = translations[currentLang].titDestino2;
+    document.getElementById('titDestino3').innerText = translations[currentLang].titDestino3;
 } 
 
