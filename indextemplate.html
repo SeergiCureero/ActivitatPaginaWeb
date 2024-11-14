@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Benvinguts a la pàgina web oficial del Montpedrosí</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inici</a></li>
+                <li><a href="lletres.html">Lletres</a></li>
+                <li><a href="estandards.html">Estàndards</a></li>
+                <li><a href="sistemaNumeric.html">Sistema Numèric</a></li>
+                <li><a href="contacte.html">Contacte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <article id="art1">
+                <h2 id="titArt1">Què és el Montpedrosí?</h2>
+                <p id="pArt1">És un recull de grafíes basat en l'alfabet llatí estandard amb la "Ç" de l'alfabet català.</p>
+                <p ID="AA">"S'escriu tot en majúscules i també té algunes grafíes d'altres alfabets com la 'Ñ' castellana."</p>
+                <p>Per a més informació sobre l'alfabet llatí, la seva història i les seves lletres podeu visitar <a href="________________________________________________________________">aquesta pàgina</a> de Viquipèdia</p>
+            </article>
+            <article id="art2">
+                <h2 id="titArt2">Història</h2>
+                <p id="pArt2">El Montpedrosí neix gràcies a l'inquietut que tenia el seu creador envers les llengues i els alfabets.</p>
+                <p>Creat al 2018, ha patit diverses modificacions. La més important va ser la 2a, on es van canviar algunes grafíes per estandaritzar-les entre si o per diferenciar-les més de les seves companyes llatines.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <button onclick="switchLanguage()">CAST</button>
+        <p>©2024    Primera* Pàgina Web    regi</p>
+    </footer>
+    
+
+
+    <script>
+        let currentLang = 'ca';
+
+        const translations = {
+            ca : {  title:'Benvinguts a la pàgina web oficial del Montpedrosí',
+                    titArt1:'Què és el Montpedrosí?',
+                    titArt2:'Història',
+                    AA:"S'escriu tot en majúscules i també té algunes grafíes d'altres alfabets com la 'Ñ' castellana.",
+                    buttonSwitchLanguage:'CAST'
+            },
+            es : {  title:'Bienvenidos a la pagina web oficial del Montpedrosí',
+                    titArt1:'Qué es el Montpedrosí?',
+                    titArt2:'Historia',
+                    AA:"Se escribe todo en mayúsculas y también tiene algunas grafías de otros alfabetos como la 'Ñ' castellana.",
+                    buttonSwitchLanguage:'CAT'
+            }
+        };
+
+
+        function switchLanguage() { 
+            currentLang = currentLang === 'ca' ? 'es' : 'ca'; 
+            document.getElementById('title').innerText = translations[currentLang].title; 
+            document.getElementById('titArt1').innerText = translations[currentLang].titArt1; 
+            document.getElementById('titArt2').innerText = translations[currentLang].titArt2; 
+            document.getElementById('AA').innerText = translations[currentLang].AA;
+            document.getElementById('buttonSwitchLanguage').innerText = translations[currentLang].buttonSwitchLanguage;
+        } 
+
+
+
+    </script>
+</body>
+</html>
