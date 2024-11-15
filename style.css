@@ -7,3 +7,40 @@
 #titArt2{
     color: #F7F1E1
 }
+
+a{
+    text-decoration: none;
+}
+
+#navBar ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+#ofertasDestinos{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+#ofertasDestinos article{
+    flex: 1 1 300px;
+    max-width: 300px;
+    padding: 20px;
+    text-align: center; 
+    border-radius: 30px;
+    background-color: #F7F1E1;
+}
+
+#ofertasDestinos a{
+    color: black;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
