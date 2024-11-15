@@ -16,6 +16,8 @@ a{
     top: 0;
     background-color: black;
     width: 100%;
+    height: 50px;
+    z-index: 1000;
 }
 
 #navBar ul{
@@ -24,12 +26,14 @@ a{
     align-items: center;
     gap: 50px;
 }
+
+body{
+    margin-top: 50px;
+}
 #ofertasDestinos{
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-top: 50px;
-
 }
 
 #ofertasDestinos article{
