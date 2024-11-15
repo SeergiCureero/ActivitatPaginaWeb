@@ -4,36 +4,36 @@ let currentLang = 'es';
 const translations = {
     es : {  buttonSwitchLanguage:'CAT',
             subTitle:'Agencia de Viajes',
-            titDestino1:'Italia',
-            titDestino2:"Mexico",
-            titDestino3:"Alemania",
-            titPorqueNuestraAgencia:"¿Porque viajar con nosotros?",
+            titDestino1:'Alemania',
+            titDestino2:"Italia",
+            titDestino3:"Mexico",
+            titPorqueNuestraAgencia:"Porque elegir nuestra agencia",
             pPorqueNuestraAgencia:"Lorem ipsum y su polla.",
             titAboutUs:"Sobre nosotros",
             pAboutUs:"Somos una agencia de viajes joven y tenemos a Diego Hijano (2+2) en nuestro equipo.",
-            pFooter:"Contacto    © 2024 Reisen Club    Politica de privacidad"
+            pFooter:"© 2024 Raisen Club. Todos los derechos reservados."
     },
     ca : {  buttonSwitchLanguage:'ENG',
             subTitle:'Agencia de Viatges',
-            titDestino1:'Itàlia',
-            titDestino2:"Mèxic",
-            titDestino3:"Alemanya",
-            titPorqueNuestraAgencia:"Per que viatjar amb nosaltres?",
+            titDestino1:'Alemanya',
+            titDestino2:"Itàlia",
+            titDestino3:"Mèxic",
+            titPorqueNuestraAgencia:"Perque escollir la nostra agència",
             pPorqueNuestraAgencia:"Lorem ipsum i la seva polla.",
             titAboutUs:"Sobre nosaltres",
             pAboutUs:"Som una agència de viatges jove i tenim al Diego Hijano (2+2) al nostre equip.",
-            pFooter:"Contacte    © 2024 Reisen Club    Política de privacitat"
+            pFooter:"© 2024 Raisen Club. Tots els drets reservats."
     },      
     en : {  buttonSwitchLanguage:'ESP',
             subTitle:'Travel Agency',
-            titDestino1:'Italy',
-            titDestino2:"Mexico",
-            titDestino3:"Germany",
+            titDestino1:'Germany',
+            titDestino2:"Italy",
+            titDestino3:"Mexico",
             titPorqueNuestraAgencia:"Why travel with us?",
             pPorqueNuestraAgencia:"Lorem ipsum and their dick.",
             titAboutUs:"About us",
             pAboutUs:"We are young team, with fresh ideas and we have Diego Hijano in our team.",
-            pFooter:"Contact    © 2024 Reisen Club    Privacy Policy"
+            pFooter:"© 2024 Raisen Club. All rights preserved."
     }
 };
 
