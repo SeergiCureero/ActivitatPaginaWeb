@@ -11,18 +11,24 @@
 a{
     text-decoration: none;
 }
+#navBar{
+    position: fixed;
+    top: 0;
+    background-color: black;
+    width: 100%;
+}
 
 #navBar ul{
     display: flex;
     list-style: none;
     align-items: center;
-    justify-content: center;
     gap: 50px;
 }
 #ofertasDestinos{
     display: flex;
     justify-content: center;
     gap: 20px;
+    margin-top: 50px;
 
 }
 
