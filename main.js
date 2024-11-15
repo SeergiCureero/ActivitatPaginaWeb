@@ -2,17 +2,38 @@
 let currentLang = 'es';
 
 const translations = {
-    ca : {  title:'Benvinguts a la pàgina web oficial del Montpedrosí',
-            titArt1:'Què és el Montpedrosí?',
-            titArt2:'Història',
-            AA:"S'escriu tot en majúscules i també té algunes grafíes d'altres alfabets com la 'Ñ' castellana.",
-            buttonSwitchLanguage:'CAST'
+    es : {  buttonSwitchLanguage:'CAT',
+            subTitle:'Agencia de Viajes',
+            titDestino1:'Alemania',
+            titDestino2:"Italia",
+            titDestino3:"Mexico",
+            titPorqueNuestraAgencia:"Porque elegir nuestra agencia",
+            pPorqueNuestraAgencia:"Lorem ipsum y su polla.",
+            titAboutUs:"Sobre nosotros",
+            pAboutUs:"Somos una agencia de viajes joven y tenemos a Diego Hijano (2+2) en nuestro equipo.",
+            pFooter:"© 2024 Raisen Club. Todos los derechos reservados."
     },
-    es : {  title:'Bienvenidos a la pagina web oficial del Montpedrosí',
-            titArt1:'Qué es el Montpedrosí?',
-            titArt2:'Historia',
-            AA:"Se escribe todo en mayúsculas y también tiene algunas grafías de otros alfabetos como la 'Ñ' castellana.",
-            buttonSwitchLanguage:'CAT'
+    ca : {  buttonSwitchLanguage:'ENG',
+            subTitle:'Agencia de Viatges',
+            titDestino1:'Alemanya',
+            titDestino2:"Itàlia",
+            titDestino3:"Mèxic",
+            titPorqueNuestraAgencia:"Perque escollir la nostra agència",
+            pPorqueNuestraAgencia:"Lorem ipsum i la seva polla.",
+            titAboutUs:"Sobre nosaltres",
+            pAboutUs:"Som una agència de viatges jove i tenim al Diego Hijano (2+2) al nostre equip.",
+            pFooter:"© 2024 Raisen Club. Tots els drets reservats."
+    },      
+    en : {  buttonSwitchLanguage:'ESP',
+            subTitle:'Travel Agency',
+            titDestino1:'Germany',
+            titDestino2:"Italy",
+            titDestino3:"Mexico",
+            titPorqueNuestraAgencia:"Why travel with us?",
+            pPorqueNuestraAgencia:"Lorem ipsum and their dick.",
+            titAboutUs:"About us",
+            pAboutUs:"We are young team, with fresh ideas and we have Diego Hijano in our team.",
+            pFooter:"© 2024 Raisen Club. All rights preserved."
     }
 };
 
@@ -29,11 +50,28 @@ function switchLanguage() {
     }
     
     
-    //change texts
-    document.getElementById('title').innerText = translations[currentLang].title; 
-    document.getElementById('titArt1').innerText = translations[currentLang].titArt1; 
-    document.getElementById('titArt2').innerText = translations[currentLang].titArt2; 
-    document.getElementById('AA').innerText = translations[currentLang].AA;
+    //change text from elements
+
+    //Header
+    //Section Banner
     document.getElementById('buttonSwitchLanguage').innerText = translations[currentLang].buttonSwitchLanguage;
+    document.getElementById('subTitle').innerText = translations[currentLang].subTitle;
+
+    //Main
+    //Section "Destinies"
+    document.getElementById('titDestino1').innerText = translations[currentLang].titDestino1; 
+    document.getElementById('titDestino2').innerText = translations[currentLang].titDestino2;
+    document.getElementById('titDestino3').innerText = translations[currentLang].titDestino3;
+    //Section "Why Our Agency?""
+    document.getElementById('titPorqueNuestraAgencia').innerText = translations[currentLang].titPorqueNuestraAgencia; 
+    document.getElementById('pPorqueNuestraAgencia').innerText = translations[currentLang].pPorqueNuestraAgencia;
+    //Section "About Us"
+    document.getElementById('titAboutUs').innerText = translations[currentLang].titAboutUs; 
+    document.getElementById('pAboutUs').innerText = translations[currentLang].pAboutUs;
+
+    //Footer
+    //Section "Footer"
+    document.getElementById('pFooter').innerText = translations[currentLang].pFooter;
+
 } 
 
