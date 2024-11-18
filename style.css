@@ -55,7 +55,7 @@ a{
     background-size: cover;
     background-position: center;
     height: 520px;
-    width: 1900px;
+    width: auto;
     color: white;
     text-align: center;
     display: flex;

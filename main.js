@@ -2,11 +2,14 @@
 let currentLang = 'es';
 
 const translations = {
-    es : {  pageLanguage:'es',
-            buttonSwitchLanguage:'CAT',
-            srcFlagSwitchLanguage:'resources/flagOfCatalonia.png',
-            subTitle:'Agencia de Viajes',
-            titDestino1:'Alemania',
+    es : {  //pageLanguage:'es',
+            buttonSwitchLanguage:"CAT",
+            srcFlagSwitchLanguage:"resources/flagOfCatalonia.png",
+            navBarHome:"Inicio",
+            navBarCountries:"Países",
+            navBarAboutUs:"Sobre Nosotros",
+            subTitle:"Agencia de Viajes",
+            titDestino1:"Alemania",
             titDestino2:"Italia",
             titDestino3:"Mexico",
             titPorqueNuestraAgencia:"Porque elegir nuestra agencia",
@@ -15,11 +18,14 @@ const translations = {
             pAboutUs:"Somos una agencia de viajes joven y tenemos a Diego Hijano (2+2) en nuestro equipo.",
             pFooter:"© 2024 Raisen Club. Todos los derechos reservados."
     },
-    ca : {  pageLanguage:'ca',
-            buttonSwitchLanguage:'ENG',
-            srcFlagSwitchLanguage:'resources/flagOfEngland.png',
-            subTitle:'Agència de Viatges',
-            titDestino1:'Alemanya',
+    ca : {  //pageLanguage:'ca',
+            buttonSwitchLanguage:"ENG",
+            srcFlagSwitchLanguage:"resources/flagOfEngland.png",
+            navBarHome:"Inici",
+            navBarCountries:"Països",
+            navBarAboutUs:"Sobre Nosaltres",
+            subTitle:"Agència de Viatges",
+            titDestino1:"Alemanya",
             titDestino2:"Itàlia",
             titDestino3:"Mèxic",
             titPorqueNuestraAgencia:"Perque escollir la nostra agència",
@@ -28,10 +34,13 @@ const translations = {
             pAboutUs:"Som una agència de viatges jove i tenim al Diego Hijano (2+2) al nostre equip.",
             pFooter:"© 2024 Raisen Club. Tots els drets reservats."
     },      
-    en : {  pageLanguage:'en',
+    en : {  //pageLanguage:'en',
             buttonSwitchLanguage:'DEU',
             srcFlagSwitchLanguage:'resources/flagOfGermany.png',
-            subTitle:'Travel Agency',
+            navBarHome:"Home",
+            navBarCountries:"Countries",
+            navBarAboutUs:"About Us",
+            subTitle:"Travel Agency",
             titDestino1:'Germany',
             titDestino2:"Italy",
             titDestino3:"Mexico",
@@ -41,10 +50,13 @@ const translations = {
             pAboutUs:"We are young team, with fresh ideas and we have Diego Hijano in our team.",
             pFooter:"© 2024 Raisen Club. All rights preserved."
     },
-    de : {  pageLanguage:'de',
-            buttonSwitchLanguage:'ESP',
-            srcFlagSwitchLanguage:'resources/flagOfSpain.png',
-            subTitle:'Reisebüro',
+    de : {  //pageLanguage:'de',
+            buttonSwitchLanguage:'ITA',
+            srcFlagSwitchLanguage:'resources/flagOfItaly.png',
+            navBarHome:"Homepage",
+            navBarCountries:"Länder",
+            navBarAboutUs:"Über uns",
+            subTitle:"Reisebüro",
             titDestino1:'Deutschland',
             titDestino2:"Italien",
             titDestino3:"Mexico",
@@ -53,7 +65,23 @@ const translations = {
             titAboutUs:"Über uns",
             pAboutUs:"Wir sind ein junges Team mit frischen Ideen und wir haben Diego Hijano in unserem Team.",
             pFooter:"© 2024 Raisen Club. Alle Rechte vorbehalten."
-}
+    },
+    it : {  //pageLanguage:'it',
+            buttonSwitchLanguage:'ESP',
+            srcFlagSwitchLanguage:'resources/flagOfSpain.png',
+            navBarHome:"Inizio",
+            navBarCountries:"Paesi",
+            navBarAboutUs:"Chi siamo",
+            subTitle:"Agenzia di viaggi",
+            titDestino1:'Germania',
+            titDestino2:"Italia",
+            titDestino3:"Messico",
+            titPorqueNuestraAgencia:"Perche viaggiare con noi?",
+            pPorqueNuestraAgencia:"Lorem ipsum e il suo cazzo",
+            titAboutUs:"Chi siamo",
+            pAboutUs:"Siamo una squadra giovane e abbiamo Diego Hijano nella nostra squadra. 2+2 = Diego Hijano.",
+            pFooter:"© 2024 Raisen Club. Alle Rechte vorbehalten."
+    }
 };
 
 
@@ -68,19 +96,25 @@ function switchLanguage() {
         currentLang = 'de';  //change language from english to german 
     }
     else if (currentLang == 'de') {
-        currentLang = 'es';  //change language from german to spanish 
+        currentLang = 'it';  //change language from german to italian 
+    }
+    else if (currentLang == 'it') {
+        currentLang = 'es';  //change language from italian to spanish 
     }
     
     
     //change text from elements
 
-    document.getElementsById('mainPageLanguage').lang = translations[currentLang].pageLanguage;
 
     //Header
-    //Section Banner
+    //Navigation Bar
     document.getElementById('imgButtonSwitchLanguage').alt = translations[currentLang].buttonSwitchLanguage;
     document.getElementById('imgButtonSwitchLanguage').title = translations[currentLang].buttonSwitchLanguage;
     document.getElementById('imgButtonSwitchLanguage').src = translations[currentLang].srcFlagSwitchLanguage;
+    document.getElementById('navBarHome').innerText = translations[currentLang].navBarHome;
+    document.getElementById('navBarCountries').innerText = translations[currentLang].navBarCountries;
+    document.getElementById('navBarAboutUs').innerText = translations[currentLang].navBarAboutUs;
+    //Section Banner
     document.getElementById('subTitle').innerText = translations[currentLang].subTitle;
 
     //Main
