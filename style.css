@@ -8,6 +8,10 @@
     color: #F7F1E1
 }
 
+body{
+    font-family: 'Hammersmith One', sans-serif;
+}
+
 a{
     text-decoration: none;
 }
@@ -18,6 +22,7 @@ a{
     width: 100%;
     height: 50px;
     z-index: 1000;
+    
 }
 
 #navBar ul{
@@ -25,6 +30,11 @@ a{
     list-style: none;
     align-items: center;
     gap: 50px;
+
+    a{
+        color: whitesmoke;
+        
+    }
 }
 
 #banner{
