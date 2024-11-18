@@ -28,7 +28,7 @@ a{
 }
 
 #banner{
-    background-image: url('banner.png');
+    background-image: url('resources/Banner.png');
     background-size: cover;
     background-position: center;
     height: 520px;
