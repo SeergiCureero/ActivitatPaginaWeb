@@ -27,6 +27,17 @@ a{
     gap: 50px;
 }
 
+#buttonSwitchLanguage{
+    box-shadow: none;
+    border: 0px;
+    background: transparent;
+}
+
+#imgButtonSwitchLanguage{
+    width: 30px;
+    height: 20px;
+}
+
 #banner{
     background-image: url('resources/Banner.png');
     background-size: cover;
