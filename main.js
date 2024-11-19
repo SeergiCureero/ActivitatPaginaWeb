@@ -84,7 +84,7 @@ const translations = {
     }
 };
 
-
+/*
 function switchLanguage() { 
     if (currentLang == 'es') {
         currentLang = 'ca';  //change language from spanish to catalan
@@ -101,16 +101,19 @@ function switchLanguage() {
     else if (currentLang == 'it') {
         currentLang = 'es';  //change language from italian to spanish 
     }
-    
+*/
+function switchLang(p_language) {
+    console.log(p_language);
+    currentLang = p_language; //change current language to the language selected    
     
     //change text from elements
 
 
     //Header
     //Navigation Bar
-    document.getElementById('imgButtonSwitchLanguage').alt = translations[currentLang].buttonSwitchLanguage;
-    document.getElementById('imgButtonSwitchLanguage').title = translations[currentLang].buttonSwitchLanguage;
-    document.getElementById('imgButtonSwitchLanguage').src = translations[currentLang].srcFlagSwitchLanguage;
+    //document.getElementById('imgButtonSwitchLanguage').alt = translations[currentLang].buttonSwitchLanguage;
+    //document.getElementById('imgButtonSwitchLanguage').title = translations[currentLang].buttonSwitchLanguage;
+    //document.getElementById('imgButtonSwitchLanguage').src = translations[currentLang].srcFlagSwitchLanguage;
     document.getElementById('navBarHome').innerText = translations[currentLang].navBarHome;
     document.getElementById('navBarCountries').innerText = translations[currentLang].navBarCountries;
     document.getElementById('navBarAboutUs').innerText = translations[currentLang].navBarAboutUs;

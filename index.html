@@ -17,7 +17,19 @@
     <header>
         <nav id="navBar">
             <ul>
-                <li><button onclick="switchLanguage()" id="buttonSwitchLanguage"><img id="imgButtonSwitchLanguage" src="resources/flagOfCatalonia.png" alt="català" title="català"></button></li>
+                <li>
+                    <!--<button onclick="switchLanguage()" id="buttonSwitchLanguage"><img id="imgButtonSwitchLanguage" src="resources/flagOfCatalonia.png" alt="català" title="català"></button>-->
+                    <div class="dropdown">
+                        <button class="dropbtn" id="botonCambioIdioma">Idioma</button>
+                        <div class="dropdown-content">
+                            <button onclick="switchLang('es')" id="botonCambioIdioma_ES">ESP</button>
+                            <button onclick="switchLang('ca')" id="botonCambioIdioma_CA">CAT</button>
+                            <button onclick="switchLang('en')" id="botonCambioIdioma_EN">ENG</button>
+                            <button onclick="switchLang('de')" id="botonCambioIdioma_DE">DEU</button>
+                            <button onclick="switchLang('it')" id="botonCambioIdioma_IT">ITA</button>
+                        </div>
+                    </div>
+                </li>
                 <li><a href="index.html" id="navBarHome">Inicio</a></li>
                 <li><a href="Paises.html" id="navBarCountries">Países</a></li>
                 <li><a href="AboutUs.html" id="navBarAboutUs">Sobre nosotros</a></li>
