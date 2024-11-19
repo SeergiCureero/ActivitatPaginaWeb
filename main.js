@@ -3,7 +3,12 @@ let currentLang = 'es';
 
 const translations = {
     es : {  //pageLanguage:'es',
-            buttonSwitchLanguage:"CAT",
+            //buttonSwitchLanguage:"CAT",
+            textSwitchLanguage_ES:'Castellano',
+            textSwitchLanguage_CA:'Catalán',
+            textSwitchLanguage_EN:'Inglés',
+            textSwitchLanguage_DE:'Alemán',
+            textSwitchLanguage_IT:'Italiano',
             srcFlagSwitchLanguage:"resources/flagOfCatalonia.png",
             navBarHome:"Inicio",
             navBarCountries:"Países",
@@ -19,7 +24,12 @@ const translations = {
             pFooter:"© 2024 Raisen Club. Todos los derechos reservados."
     },
     ca : {  //pageLanguage:'ca',
-            buttonSwitchLanguage:"ENG",
+            //buttonSwitchLanguage:"ENG",
+            textSwitchLanguage_ES:'Castellà',
+            textSwitchLanguage_CA:'Català',
+            textSwitchLanguage_EN:'Anglès',
+            textSwitchLanguage_DE:'Alemany',
+            textSwitchLanguage_IT:'Italià',
             srcFlagSwitchLanguage:"resources/flagOfEngland.png",
             navBarHome:"Inici",
             navBarCountries:"Països",
@@ -35,7 +45,12 @@ const translations = {
             pFooter:"© 2024 Raisen Club. Tots els drets reservats."
     },      
     en : {  //pageLanguage:'en',
-            buttonSwitchLanguage:'DEU',
+            //buttonSwitchLanguage:'DEU',
+            textSwitchLanguage_ES:'Spanish',
+            textSwitchLanguage_CA:'Catalan',
+            textSwitchLanguage_EN:'English',
+            textSwitchLanguage_DE:'German',
+            textSwitchLanguage_IT:'Italian',
             srcFlagSwitchLanguage:'resources/flagOfGermany.png',
             navBarHome:"Home",
             navBarCountries:"Countries",
@@ -51,7 +66,12 @@ const translations = {
             pFooter:"© 2024 Raisen Club. All rights preserved."
     },
     de : {  //pageLanguage:'de',
-            buttonSwitchLanguage:'ITA',
+            //buttonSwitchLanguage:'ITA',
+            textSwitchLanguage_ES:'Spanisch',
+            textSwitchLanguage_CA:'Katalanisch',
+            textSwitchLanguage_EN:'Englisch',
+            textSwitchLanguage_DE:'Deutsch',
+            textSwitchLanguage_IT:'Italienisch',
             srcFlagSwitchLanguage:'resources/flagOfItaly.png',
             navBarHome:"Homepage",
             navBarCountries:"Länder",
@@ -67,7 +87,12 @@ const translations = {
             pFooter:"© 2024 Raisen Club. Alle Rechte vorbehalten."
     },
     it : {  //pageLanguage:'it',
-            buttonSwitchLanguage:'ESP',
+            //buttonSwitchLanguage:'ESP',
+            textSwitchLanguage_ES:'Spagnolo',
+            textSwitchLanguage_CA:'Catalano',
+            textSwitchLanguage_EN:'Inglese',
+            textSwitchLanguage_DE:'Tedesco',
+            textSwitchLanguage_IT:'Italiano',
             srcFlagSwitchLanguage:'resources/flagOfSpain.png',
             navBarHome:"Inizio",
             navBarCountries:"Paesi",
@@ -84,7 +109,7 @@ const translations = {
     }
 };
 
-/*
+/* OLD IMLPEMENTATION
 function switchLanguage() { 
     if (currentLang == 'es') {
         currentLang = 'ca';  //change language from spanish to catalan
@@ -102,18 +127,26 @@ function switchLanguage() {
         currentLang = 'es';  //change language from italian to spanish 
     }
 */
+//NEW IMPLEMENTATION
 function switchLang(p_language) {
-    console.log(p_language);
-    currentLang = p_language; //change current language to the language selected    
+    console.log(p_language);    //just to debug
+    currentLang = p_language;   //change current language to the language selected    
     
     //change text from elements
 
 
     //Header
     //Navigation Bar
+    //Old Switching Language Implementation
     //document.getElementById('imgButtonSwitchLanguage').alt = translations[currentLang].buttonSwitchLanguage;
     //document.getElementById('imgButtonSwitchLanguage').title = translations[currentLang].buttonSwitchLanguage;
     //document.getElementById('imgButtonSwitchLanguage').src = translations[currentLang].srcFlagSwitchLanguage;
+    //New Switching Language Implementation
+    document.getElementById('imgBotonCambioIdioma_ES').title = translations[currentLang].textSwitchLanguage_ES; //we just change the title of the image, no need to change also the alternative text
+    document.getElementById('imgBotonCambioIdioma_CA').title = translations[currentLang].textSwitchLanguage_CA;
+    document.getElementById('imgBotonCambioIdioma_EN').title = translations[currentLang].textSwitchLanguage_EN;
+    document.getElementById('imgBotonCambioIdioma_DE').title = translations[currentLang].textSwitchLanguage_DE;
+    document.getElementById('imgBotonCambioIdioma_IT').title = translations[currentLang].textSwitchLanguage_IT;
     document.getElementById('navBarHome').innerText = translations[currentLang].navBarHome;
     document.getElementById('navBarCountries').innerText = translations[currentLang].navBarCountries;
     document.getElementById('navBarAboutUs').innerText = translations[currentLang].navBarAboutUs;

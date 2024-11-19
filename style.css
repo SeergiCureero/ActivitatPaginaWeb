@@ -52,15 +52,19 @@ a{
     }
 }
 
-#buttonSwitchLanguage{
+.buttonSwitchLanguage{
     box-shadow: none;
     border: 0px;
     background: transparent;
 }
 
-#imgButtonSwitchLanguage{
+.imgLanguage{
     width: 30px;
     height: 20px;
+}
+
+#dropdown_UL{
+    display: flex-box;
 }
 
 #banner{
