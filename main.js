@@ -1,9 +1,9 @@
 
-let currentLang = 'es';
+
 
 const translations = {
-    es : {  //pageLanguage:'es',
-            //buttonSwitchLanguage:"CAT",
+    es : {  
+            botonCambioIdioma:'Idioma',
             textSwitchLanguage_ES:'Castellano',
             textSwitchLanguage_CA:'Catalán',
             textSwitchLanguage_EN:'Inglés',
@@ -23,8 +23,8 @@ const translations = {
             pAboutUs:"Somos una agencia de viajes joven y tenemos a Diego Hijano (2+2) en nuestro equipo.",
             pFooter:"© 2024 Raisen Club. Todos los derechos reservados."
     },
-    ca : {  //pageLanguage:'ca',
-            //buttonSwitchLanguage:"ENG",
+    ca : {  
+            botonCambioIdioma:'Llengua',
             textSwitchLanguage_ES:'Castellà',
             textSwitchLanguage_CA:'Català',
             textSwitchLanguage_EN:'Anglès',
@@ -44,8 +44,8 @@ const translations = {
             pAboutUs:"Som una agència de viatges jove i tenim al Diego Hijano (2+2) al nostre equip.",
             pFooter:"© 2024 Raisen Club. Tots els drets reservats."
     },      
-    en : {  //pageLanguage:'en',
-            //buttonSwitchLanguage:'DEU',
+    en : {  
+            botonCambioIdioma:'Language',
             textSwitchLanguage_ES:'Spanish',
             textSwitchLanguage_CA:'Catalan',
             textSwitchLanguage_EN:'English',
@@ -65,8 +65,8 @@ const translations = {
             pAboutUs:"We are young team, with fresh ideas and we have Diego Hijano in our team.",
             pFooter:"© 2024 Raisen Club. All rights preserved."
     },
-    de : {  //pageLanguage:'de',
-            //buttonSwitchLanguage:'ITA',
+    de : {  
+            botonCambioIdioma:'Sprache',
             textSwitchLanguage_ES:'Spanisch',
             textSwitchLanguage_CA:'Katalanisch',
             textSwitchLanguage_EN:'Englisch',
@@ -86,8 +86,8 @@ const translations = {
             pAboutUs:"Wir sind ein junges Team mit frischen Ideen und wir haben Diego Hijano in unserem Team.",
             pFooter:"© 2024 Raisen Club. Alle Rechte vorbehalten."
     },
-    it : {  //pageLanguage:'it',
-            //buttonSwitchLanguage:'ESP',
+    it : {  
+            botonCambioIdioma:'Lingua',
             textSwitchLanguage_ES:'Spagnolo',
             textSwitchLanguage_CA:'Catalano',
             textSwitchLanguage_EN:'Inglese',
@@ -109,39 +109,25 @@ const translations = {
     }
 };
 
-/* OLD IMLPEMENTATION
-function switchLanguage() { 
-    if (currentLang == 'es') {
-        currentLang = 'ca';  //change language from spanish to catalan
-    }
-    else if(currentLang == 'ca'){
-        currentLang = 'en';  //change language from catalan to english
-    }
-    else if (currentLang == 'en') {
-        currentLang = 'de';  //change language from english to german 
-    }
-    else if (currentLang == 'de') {
-        currentLang = 'it';  //change language from german to italian 
-    }
-    else if (currentLang == 'it') {
-        currentLang = 'es';  //change language from italian to spanish 
-    }
-*/
-//NEW IMPLEMENTATION
-function switchLang(p_language) {
-    console.log(p_language);    //just to debug
-    currentLang = p_language;   //change current language to the language selected    
-    
-    //change text from elements
 
+function switchLang(p_language) {
+    //Store Language
+    localStorage.setItem('language', p_language);
+    //Update translations
+    updateLanguage();
+}
+
+function updateLanguage() {
+    //Read stored language
+    const currentLang = localStorage.getItem('language');
+    console.log(currentLang);   //Debug in console
+
+    
+    //__Change text from elements__
 
     //Header
     //Navigation Bar
-    //Old Switching Language Implementation
-    //document.getElementById('imgButtonSwitchLanguage').alt = translations[currentLang].buttonSwitchLanguage;
-    //document.getElementById('imgButtonSwitchLanguage').title = translations[currentLang].buttonSwitchLanguage;
-    //document.getElementById('imgButtonSwitchLanguage').src = translations[currentLang].srcFlagSwitchLanguage;
-    //New Switching Language Implementation
+    document.getElementById('botonCambioIdioma').innerText = translations[currentLang].botonCambioIdioma;
     document.getElementById('imgBotonCambioIdioma_ES').title = translations[currentLang].textSwitchLanguage_ES; //we just change the title of the image, no need to change also the alternative text
     document.getElementById('imgBotonCambioIdioma_CA').title = translations[currentLang].textSwitchLanguage_CA;
     document.getElementById('imgBotonCambioIdioma_EN').title = translations[currentLang].textSwitchLanguage_EN;
