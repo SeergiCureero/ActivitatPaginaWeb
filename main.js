@@ -140,11 +140,11 @@ const translations = {
             //TEXT FROM DESTINY PAGES
             //Destiny 1 (Germany)
             C1D1:"Monaco",
-            T1C1D1:`La capital de Baviera, casa de la cervesa, i una de les ciutats amb més rellevancia a la història recent d'Alemanya i del mon. Gaudeix en un dels milers Biergarten que trobaràs a Munic per sols ${prizeC1D1}€`,
+            T1C1D1:`La capital di Baviera, casa della birra, e una delle città piu rilevanti dell'istoria ricente dalla Germania e del mondo. Goditi a qualcuno dei mille Biergarten che troverai a Monaco per solo ${prizeC1D1}€`,
             C2D1:"Berlino",
-            T1C2D1:`No hi ha ciutat com Berlín. Amb un viatge no te l'acabes, però amb nosaltres veuràs molt per sols ${prizeC2D1}€`,
+            T1C2D1:`Non c'è nessuna città come Berlino. Con questo viaggio no la finisci, ma con noi vedrai molto per solo ${prizeC2D1}€`,
             C3D1:"Colonia",
-            T1C3D1:`Amant del carnaval? Colonia té el millor carnaval de tota Europa. Gaudeix d'un carnaval inoblidable per sols ${prizeC3D1}€`,
+            T1C3D1:`Amante del carnevale? Colonia ha il meglio carnevale d'Europa. Goditi d'un carnavale che non potrai dimenticare per solo ${prizeC3D1}€`,
     }
 };
 
