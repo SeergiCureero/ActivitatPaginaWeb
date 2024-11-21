@@ -40,7 +40,7 @@ const translations = {
             C2D1:"Berlín",
             T1C2D1:`No hay ciudad como Berlín. Con un viaje no te la acabas, pero con nosotros verás mucho por solo ${prizeC2D1}€`,
             C3D1:"Colonia",
-            T1C3D1:`¿Amante del carnaval? Köln tiene el mejor carnaval de toda Europa. Disfruta de un carnaval inolvidable por solo ${prizeC3D1}€`,
+            T1C3D1:`¿Amante del carnaval? Colònia té tiene el mejor carnaval de toda Europa. Disfruta de un carnaval inolvidable por solo ${prizeC3D1}€`,
             //Destiny 2 Italy
             C1D1:"Milán",
             T1C1D1:`MILAN ${prizeC1D1}€`,
@@ -80,11 +80,11 @@ const translations = {
             //TEXT FROM DESTINY PAGES
             //Destiny 1 (Germany)
             C1D1:"Munic",
-            T1C1D1:``,
+            T1C1D1:`La capital de Baviera, casa de la cervesa, i una de les ciutats amb més rellevancia a la història recent d'Alemanya i del mon. Gaudeix en un dels milers Biergarten que trobaràs a Munic per sols ${prizeC1D1}€`,
             C2D1:"Berlín",
-            T1C2D1:"",
+            T1C2D1:`No hi ha ciutat com Berlín. Amb un viatge no te l'acabes, però amb nosaltres veuràs molt per sols ${prizeC2D1}€`,
             C3D1:"Colònia",
-            T1C3D1:"",
+            T1C3D1:`Amant del carnaval? Colonia té el millor carnaval de tota Europa. Gaudeix d'un carnaval inoblidable per sols ${prizeC3D1}€`,
     },      
     en : {  
             botonCambioIdioma:"Language",
@@ -110,41 +110,11 @@ const translations = {
             //TEXT FROM DESTINY PAGES
             //Destiny 1 (Germany)
             C1D1:"Munich",
-            T1C1D1:"",
+            T1C1D1:`The capital of Bavaria, home of the best beers in the world and one of the cities with the most relevance in the recent history of Germany and the world. enjoy visiting one of its many Biergarten for only ${prizeC1D1}€`,
             C2D1:"Berlin",
-            T1C2D1:"",
+            T1C2D1:`There's no city like Berlin. You won't see it all in just one trip, but travelling with us is a good headstart, and it only costs ${prizeC2D1}€`,
             C3D1:"Cologne",
-            T1C3D1:"",
-    },
-    de : {  
-            botonCambioIdioma:"Sprache",
-            textSwitchLanguage_ES:"Spanisch",
-            textSwitchLanguage_CA:"Katalanisch",
-            textSwitchLanguage_EN:"Englisch",
-            textSwitchLanguage_DE:"Deutsch",
-            textSwitchLanguage_IT:"Italienisch",
-            srcFlagSwitchLanguage:"resources/flagOfItaly.png",
-            navBarHome:"Homepage",
-            navBarCountries:"Länder",
-            navBarAboutUs:"Über uns",
-            subTitle:"Reisebüro",
-            titDestino1:'Deutschland',
-            titDestino2:"Italien",
-            titDestino3:"Mexico",
-            titPorqueNuestraAgencia:"Warum mit uns reisen?",
-            pPorqueNuestraAgencia:"Lorem ipsum und ihr Schwanz.",
-            titAboutUs:"Über uns",
-            pAboutUs:"Wir sind ein junges Team mit frischen Ideen und wir haben Diego Hijano in unserem Team.",
-            pFooter:"© 2024 Raisen Club. Alle Rechte vorbehalten.",
-
-            //TEXT FROM DESTINY PAGES
-            //Destiny 1 (Germany)
-            C1D1:"München",
-            T1C1D1:"",
-            C2D1:"Berlin",
-            T1C2D1:"",
-            C3D1:"Köln",
-            T1C3D1:"",
+            T1C3D1:`Carnival lover? Cologne has THE BEST carnvial in Europe. Enjoy an unforgettable carnival for only ${prizeC3D1}€`,
     },
     it : {  
             botonCambioIdioma:"Lingua",
@@ -170,11 +140,11 @@ const translations = {
             //TEXT FROM DESTINY PAGES
             //Destiny 1 (Germany)
             C1D1:"Monaco",
-            T1C1D1:"",
+            T1C1D1:`La capital di Baviera, casa della birra, e una delle città piu rilevanti dell'istoria ricente dalla Germania e del mondo. Goditi a qualcuno dei mille Biergarten che troverai a Monaco per solo ${prizeC1D1}€`,
             C2D1:"Berlino",
-            T1C2D1:"",
+            T1C2D1:`Non c'è nessuna città come Berlino. Con questo viaggio no la finisci, ma con noi vedrai molto per solo ${prizeC2D1}€`,
             C3D1:"Colonia",
-            T1C3D1:"",
+            T1C3D1:`Amante del carnevale? Colonia ha il meglio carnevale d'Europa. Goditi d'un carnavale che non potrai dimenticare per solo ${prizeC3D1}€`,
     }
 };
 
