@@ -53,6 +53,7 @@ a{
 .Inicio{
     display: flex;
     gap: 50px;
+    font-size: 18px;
 }
 
 /*___BOTÓN CAMBIO DE LENGUA DROPDOWN___*/
@@ -60,7 +61,7 @@ a{
     background-color: #04AA6D;
     color: white;
     padding: 16px;
-    font-size: 16px;
+    font-size: 18px;
     border: none;
     border-radius: 30px;
     font-family: var(--fuenteDeLetra);
@@ -216,3 +217,8 @@ footer{
     color: var(--blanco);
 }
 
+.navegador{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
