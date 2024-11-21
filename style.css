@@ -117,6 +117,69 @@ a{
     }
 }
 
+#banner1{
+    background-image: url('resources/alemania.jfif');
+    background-size: cover;
+    background-position: center;
+    height:840px;
+    width: auto;
+    color: var(--blanco);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2{
+        font-size: 70px;
+    }
+    h1{
+        margin-top: -50px;
+        font-size: 30px;
+    }
+}
+#banner2{
+    background-image: url('resources/italia.jpg');
+    background-size: cover;
+    background-position: center;
+    height:840px;
+    width: auto;
+    color: var(--blanco);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2{
+        font-size: 70px;
+    }
+    h1{
+        margin-top: -50px;
+        font-size: 30px;
+    }
+}
+#banner3{
+    background-image: url('resources/mexico.jfif');
+    background-size: cover;
+    background-position: center;
+    height:840px;
+    width: auto;
+    color: var(--blanco);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2{
+        font-size: 70px;
+    }
+    h1{
+        margin-top: -50px;
+        font-size: 30px;
+    }
+}
 #ofertasDestinos{
     display: flex;
     justify-content: center;
@@ -126,11 +189,19 @@ a{
 
 #ofertasDestinos article{
     flex: 1 1 300px;
-    max-width: 300px;
+    max-width: 550px;
+    height: 500px;
     padding: 20px;
     text-align: center; 
     border-radius: 30px;
     background-color: var(--bgColorDestinos);
+
+    h2{
+        font-size: 40px;
+    }
+    p{
+        font-size: 20px;
+    }
 
 }
 
