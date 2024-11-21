@@ -213,38 +213,43 @@ function updateLanguage() {
     e_titDestiny1 = document.getElementById('titDestino1');
     e_titDestiny2 = document.getElementById('titDestino2');
     e_titDestiny3 = document.getElementById('titDestino3');
-    //Section "Why Our Agency?""
-    document.getElementById('titPorqueNuestraAgencia')?.innerText = translations[currentLang].titPorqueNuestraAgencia; 
-    document.getElementById('pPorqueNuestraAgencia')?.innerText = translations[currentLang].pPorqueNuestraAgencia;
+    //Section "Why Our Agency?"
+    e_titWhyOurAgency = document.getElementById('titPorqueNuestraAgencia'); 
+    e_pWhyOurAgency = document.getElementById('pPorqueNuestraAgencia');
     //Section "About Us"
-    document.getElementById('titAboutUs')?.innerText = translations[currentLang].titAboutUs; 
-    document.getElementById('pAboutUs')?.innerText = translations[currentLang].pAboutUs;
+    e_titAboutUs = document.getElementById('titAboutUs'); 
+    e_pAboutUs = document.getElementById('pAboutUs');
 
     //Footer
     //Section "Footer"
-    document.getElementById('pFooter')?.innerText = translations[currentLang].pFooter;
+    e_pFooter = document.getElementById('pFooter');
 
     //Text from destiny pages
     //Destiny 1
-    document.getElementById('C1D1')?.innerText = translations[currentLang].C1D1;
-    document.getElementById('T1C1D1')?.innerText = translations[currentLang].T1C1D1;
-    document.getElementById('C2D1')?.innerText = translations[currentLang].C2D1;
-    document.getElementById('T1C2D1')?.innerText = translations[currentLang].T1C2D1;
-    document.getElementById('C3D1')?.innerText = translations[currentLang].C3D1;
-    document.getElementById('T1C3D1')?.innerText = translations[currentLang].T1C3D1;
+    document.getElementById('C1D1').innerText = translations[currentLang].C1D1;
+    document.getElementById('T1C1D1').innerText = translations[currentLang].T1C1D1;
+    document.getElementById('C2D1').innerText = translations[currentLang].C2D1;
+    document.getElementById('T1C2D1').innerText = translations[currentLang].T1C2D1;
+    document.getElementById('C3D1').innerText = translations[currentLang].C3D1;
+    document.getElementById('T1C3D1').innerText = translations[currentLang].T1C3D1;
     //Destiny 2
-    document.getElementById('C1D2')?.innerText = translations[currentLang].C1D2;
-    document.getElementById('T1C1D2')?.innerText = translations[currentLang].T1C1D2;
-    document.getElementById('C2D2')?.innerText = translations[currentLang].C2D2;
-    document.getElementById('T1C2D2')?.innerText = translations[currentLang].T1C2D2;
-    document.getElementById('C3D2')?.innerText = translations[currentLang].C3D2;
-    document.getElementById('T1C3D2')?.innerText = translations[currentLang].T1C3D2;
+    document.getElementById('C1D2').innerText = translations[currentLang].C1D2;
+    document.getElementById('T1C1D2').innerText = translations[currentLang].T1C1D2;
+    document.getElementById('C2D2').innerText = translations[currentLang].C2D2;
+    document.getElementById('T1C2D2').innerText = translations[currentLang].T1C2D2;
+    document.getElementById('C3D2').innerText = translations[currentLang].C3D2;
+    document.getElementById('T1C3D2').innerText = translations[currentLang].T1C3D2;
 
 
 
     e_subtitle?.innerText = translations[currentLang].subTitle;
     e_titDestiny1?.innerText = translations[currentLang].titDestino1; 
     e_titDestiny2?.innerText = translations[currentLang].titDestino2;
-    e_titDestiny3?.innerText = translations[currentLang].titDestino3; 
+    e_titDestiny3?.innerText = translations[currentLang].titDestino3;
+    e_titWhyOurAgency?.innerText = translations[currentLang].titPorqueNuestraAgencia;
+    e_pWhyOurAgency?.innerText = translations[currentLang].pPorqueNuestraAgencia;
+    e_titAboutUs?.innerText = translations[currentLang].titAboutUs;
+    e_pAboutUs?.innerText = translations[currentLang].pAboutUs;
+    e_pFooter?.innerText = translations[currentLang].pFooter;
 } 
 
