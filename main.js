@@ -17,7 +17,6 @@ const translations = {
             textSwitchLanguage_ES:"Castellano",
             textSwitchLanguage_CA:"Catalán",
             textSwitchLanguage_EN:"Inglés",
-            textSwitchLanguage_DE:"Alemán",
             textSwitchLanguage_IT:"Italiano",
             srcFlagSwitchLanguage:"resources/flagOfCatalonia.png",
             navBarHome:"Inicio",
@@ -61,7 +60,6 @@ const translations = {
             textSwitchLanguage_ES:"Castellà",
             textSwitchLanguage_CA:"Català",
             textSwitchLanguage_EN:"Anglès",
-            textSwitchLanguage_DE:"Alemany",
             textSwitchLanguage_IT:"Italià",
             srcFlagSwitchLanguage:"resources/flagOfEngland.png",
             navBarHome:"Inici",
@@ -91,7 +89,6 @@ const translations = {
             textSwitchLanguage_ES:"Spanish",
             textSwitchLanguage_CA:"Catalan",
             textSwitchLanguage_EN:"English",
-            textSwitchLanguage_DE:"German",
             textSwitchLanguage_IT:"Italian",
             srcFlagSwitchLanguage:"resources/flagOfGermany.png",
             navBarHome:"Home",
@@ -121,7 +118,6 @@ const translations = {
             textSwitchLanguage_ES:"Spagnolo",
             textSwitchLanguage_CA:"Catalano",
             textSwitchLanguage_EN:"Inglese",
-            textSwitchLanguage_DE:"Tedesco",
             textSwitchLanguage_IT:"Italiano",
             srcFlagSwitchLanguage:"resources/flagOfSpain.png",
             navBarHome:"Inizio",
@@ -171,7 +167,6 @@ function updateLanguage() {
     document.getElementById('imgBotonCambioIdioma_ES').title = translations[currentLang].textSwitchLanguage_ES; //we just change the title of the image, no need to change also the alternative text
     document.getElementById('imgBotonCambioIdioma_CA').title = translations[currentLang].textSwitchLanguage_CA;
     document.getElementById('imgBotonCambioIdioma_EN').title = translations[currentLang].textSwitchLanguage_EN;
-    document.getElementById('imgBotonCambioIdioma_DE').title = translations[currentLang].textSwitchLanguage_DE;
     document.getElementById('imgBotonCambioIdioma_IT').title = translations[currentLang].textSwitchLanguage_IT;
     document.getElementById('navBarHome').innerText = translations[currentLang].navBarHome;
     document.getElementById('navBarCountries').innerText = translations[currentLang].navBarCountries;
