@@ -206,23 +206,23 @@ function updateLanguage() {
     document.getElementById('navBarCountries').innerText = translations[currentLang].navBarCountries;
     document.getElementById('navBarAboutUs').innerText = translations[currentLang].navBarAboutUs;
     //Section Banner
-    e_subtitle = document.getElementById('subTitle');
+    document.getElementById('subTitle').innerText = translations[currentLang].subTitle;
 
     //Main
     //Section "Destinies"
-    e_titDestiny1 = document.getElementById('titDestino1');
-    e_titDestiny2 = document.getElementById('titDestino2');
-    e_titDestiny3 = document.getElementById('titDestino3');
+    document.getElementById('titDestino1').innerText = translations[currentLang].titDestino1;
+    document.getElementById('titDestino2').innerText = translations[currentLang].titDestino2;
+    document.getElementById('titDestino3').innerText = translations[currentLang].titDestino3;
     //Section "Why Our Agency?"
-    e_titWhyOurAgency = document.getElementById('titPorqueNuestraAgencia'); 
-    e_pWhyOurAgency = document.getElementById('pPorqueNuestraAgencia');
+    document.getElementById('titPorqueNuestraAgencia').innerText = translations[currentLang].titPorqueNuestraAgencia; 
+    document.getElementById('pPorqueNuestraAgencia').innerText = translations[currentLang].pPorqueNuestraAgencia;
     //Section "About Us"
-    e_titAboutUs = document.getElementById('titAboutUs'); 
-    e_pAboutUs = document.getElementById('pAboutUs');
+    document.getElementById('titAboutUs').innerText = translations[currentLang].titAboutUs;
+    document.getElementById('pAboutUs').innerText = translations[currentLang].pAboutUs;
 
     //Footer
     //Section "Footer"
-    e_pFooter = document.getElementById('pFooter');
+    document.getElementById('pFooter').innerText = translations[currentLang].pFooter;
 
     //Text from destiny pages
     //Destiny 1
@@ -239,17 +239,5 @@ function updateLanguage() {
     document.getElementById('T1C2D2').innerText = translations[currentLang].T1C2D2;
     document.getElementById('C3D2').innerText = translations[currentLang].C3D2;
     document.getElementById('T1C3D2').innerText = translations[currentLang].T1C3D2;
-
-
-
-    e_subtitle?.innerText = translations[currentLang].subTitle;
-    e_titDestiny1?.innerText = translations[currentLang].titDestino1; 
-    e_titDestiny2?.innerText = translations[currentLang].titDestino2;
-    e_titDestiny3?.innerText = translations[currentLang].titDestino3;
-    e_titWhyOurAgency?.innerText = translations[currentLang].titPorqueNuestraAgencia;
-    e_pWhyOurAgency?.innerText = translations[currentLang].pPorqueNuestraAgencia;
-    e_titAboutUs?.innerText = translations[currentLang].titAboutUs;
-    e_pAboutUs?.innerText = translations[currentLang].pAboutUs;
-    e_pFooter?.innerText = translations[currentLang].pFooter;
 } 
 
