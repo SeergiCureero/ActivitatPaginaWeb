@@ -25,6 +25,7 @@ body{
     font-family: var(--fuenteDeLetra);
     background-color:var(--bgColor);
     color: var(--blanco);
+    margin-top: 50px;
 }
 
 a{
@@ -88,9 +89,7 @@ a{
         font-size: 30px;
     }
 }
-body{
-    margin-top: 50px;
-}
+
 #ofertasDestinos{
     display: flex;
     justify-content: center;

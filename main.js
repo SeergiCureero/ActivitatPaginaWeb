@@ -1,14 +1,24 @@
+//Prizes
+prizeC1D1 = 500;    //München
+prizeC2D1 = 500;    //Berlin
+prizeC3D1 = 500;    //Köln
+prizeC1D2 = 500;    //Milano
+prizeC2D2 = 500;    //Roma
+prizeC3D2 = 500;    //Venezia
+prizeC1D3 = 500;    //
+prizeC2D3 = 500;
+prizeC3D3 = 500;
 
 
 
 const translations = {
     es : {  
-            botonCambioIdioma:'Idioma',
-            textSwitchLanguage_ES:'Castellano',
-            textSwitchLanguage_CA:'Catalán',
-            textSwitchLanguage_EN:'Inglés',
-            textSwitchLanguage_DE:'Alemán',
-            textSwitchLanguage_IT:'Italiano',
+            botonCambioIdioma:"Idioma",
+            textSwitchLanguage_ES:"Castellano",
+            textSwitchLanguage_CA:"Catalán",
+            textSwitchLanguage_EN:"Inglés",
+            textSwitchLanguage_DE:"Alemán",
+            textSwitchLanguage_IT:"Italiano",
             srcFlagSwitchLanguage:"resources/flagOfCatalonia.png",
             navBarHome:"Inicio",
             navBarCountries:"Países",
@@ -21,15 +31,38 @@ const translations = {
             pPorqueNuestraAgencia:"Lorem ipsum y su polla.",
             titAboutUs:"Sobre nosotros",
             pAboutUs:"Somos una agencia de viajes joven y tenemos a Diego Hijano (2+2) en nuestro equipo.",
-            pFooter:"© 2024 Raisen Club. Todos los derechos reservados."
+            pFooter:"© 2024 Raisen Club. Todos los derechos reservados.",
+
+            //TEXT FROM DESTINY PAGES
+            //Destiny 1 (Germany)
+            C1D1:"Munich",
+            T1C1D1:`La capital de Baviera, casa de la cerveza, y una de las ciudades con más relevancia en la historia reciente de Alemania y del mundo. Disfruta en uno de los mil Biergarten de Münich por solo ${prizeC1D1}€`,
+            C2D1:"Berlín",
+            T1C2D1:`No hay ciudad como Berlín. Con un viaje no te la acabas, pero con nosotros verás mucho por solo ${prizeC2D1}€`,
+            C3D1:"Colonia",
+            T1C3D1:`¿Amante del carnaval? Köln tiene el mejor carnaval de toda Europa. Disfruta de un carnaval inolvidable por solo ${prizeC3D1}€`,
+            //Destiny 2 Italy
+            C1D1:"Milán",
+            T1C1D1:`MILAN ${prizeC1D1}€`,
+            C2D1:"Roma",
+            T1C2D1:`ROMA ${prizeC2D1}€`,
+            C3D1:"Venecia",
+            T1C3D1:`VENECIA${prizeC3D1}€`,
+            //Destiny 3 Mexico
+            C1D1:"",
+            T1C1D1:`${prizeC1D1}€`,
+            C2D1:"",
+            T1C2D1:`${prizeC2D1}€`,
+            C3D1:"",
+            T1C3D1:`${prizeC3D1}€`
     },
     ca : {  
-            botonCambioIdioma:'Llengua',
-            textSwitchLanguage_ES:'Castellà',
-            textSwitchLanguage_CA:'Català',
-            textSwitchLanguage_EN:'Anglès',
-            textSwitchLanguage_DE:'Alemany',
-            textSwitchLanguage_IT:'Italià',
+            botonCambioIdioma:"Llengua",
+            textSwitchLanguage_ES:"Castellà",
+            textSwitchLanguage_CA:"Català",
+            textSwitchLanguage_EN:"Anglès",
+            textSwitchLanguage_DE:"Alemany",
+            textSwitchLanguage_IT:"Italià",
             srcFlagSwitchLanguage:"resources/flagOfEngland.png",
             navBarHome:"Inici",
             navBarCountries:"Països",
@@ -42,16 +75,25 @@ const translations = {
             pPorqueNuestraAgencia:"Lorem ipsum i la seva polla.",
             titAboutUs:"Sobre nosaltres",
             pAboutUs:"Som una agència de viatges jove i tenim al Diego Hijano (2+2) al nostre equip.",
-            pFooter:"© 2024 Raisen Club. Tots els drets reservats."
+            pFooter:"© 2024 Raisen Club. Tots els drets reservats.",
+
+            //TEXT FROM DESTINY PAGES
+            //Destiny 1 (Germany)
+            C1D1:"Munic",
+            T1C1D1:``,
+            C2D1:"Berlín",
+            T1C2D1:"",
+            C3D1:"Colònia",
+            T1C3D1:"",
     },      
     en : {  
-            botonCambioIdioma:'Language',
-            textSwitchLanguage_ES:'Spanish',
-            textSwitchLanguage_CA:'Catalan',
-            textSwitchLanguage_EN:'English',
-            textSwitchLanguage_DE:'German',
-            textSwitchLanguage_IT:'Italian',
-            srcFlagSwitchLanguage:'resources/flagOfGermany.png',
+            botonCambioIdioma:"Language",
+            textSwitchLanguage_ES:"Spanish",
+            textSwitchLanguage_CA:"Catalan",
+            textSwitchLanguage_EN:"English",
+            textSwitchLanguage_DE:"German",
+            textSwitchLanguage_IT:"Italian",
+            srcFlagSwitchLanguage:"resources/flagOfGermany.png",
             navBarHome:"Home",
             navBarCountries:"Countries",
             navBarAboutUs:"About Us",
@@ -63,16 +105,25 @@ const translations = {
             pPorqueNuestraAgencia:"Lorem ipsum and their dick.",
             titAboutUs:"About us",
             pAboutUs:"We are young team, with fresh ideas and we have Diego Hijano in our team.",
-            pFooter:"© 2024 Raisen Club. All rights preserved."
+            pFooter:"© 2024 Raisen Club. All rights preserved.",
+
+            //TEXT FROM DESTINY PAGES
+            //Destiny 1 (Germany)
+            C1D1:"Munich",
+            T1C1D1:"",
+            C2D1:"Berlin",
+            T1C2D1:"",
+            C3D1:"Cologne",
+            T1C3D1:"",
     },
     de : {  
-            botonCambioIdioma:'Sprache',
-            textSwitchLanguage_ES:'Spanisch',
-            textSwitchLanguage_CA:'Katalanisch',
-            textSwitchLanguage_EN:'Englisch',
-            textSwitchLanguage_DE:'Deutsch',
-            textSwitchLanguage_IT:'Italienisch',
-            srcFlagSwitchLanguage:'resources/flagOfItaly.png',
+            botonCambioIdioma:"Sprache",
+            textSwitchLanguage_ES:"Spanisch",
+            textSwitchLanguage_CA:"Katalanisch",
+            textSwitchLanguage_EN:"Englisch",
+            textSwitchLanguage_DE:"Deutsch",
+            textSwitchLanguage_IT:"Italienisch",
+            srcFlagSwitchLanguage:"resources/flagOfItaly.png",
             navBarHome:"Homepage",
             navBarCountries:"Länder",
             navBarAboutUs:"Über uns",
@@ -84,16 +135,25 @@ const translations = {
             pPorqueNuestraAgencia:"Lorem ipsum und ihr Schwanz.",
             titAboutUs:"Über uns",
             pAboutUs:"Wir sind ein junges Team mit frischen Ideen und wir haben Diego Hijano in unserem Team.",
-            pFooter:"© 2024 Raisen Club. Alle Rechte vorbehalten."
+            pFooter:"© 2024 Raisen Club. Alle Rechte vorbehalten.",
+
+            //TEXT FROM DESTINY PAGES
+            //Destiny 1 (Germany)
+            C1D1:"München",
+            T1C1D1:"",
+            C2D1:"Berlin",
+            T1C2D1:"",
+            C3D1:"Köln",
+            T1C3D1:"",
     },
     it : {  
-            botonCambioIdioma:'Lingua',
-            textSwitchLanguage_ES:'Spagnolo',
-            textSwitchLanguage_CA:'Catalano',
-            textSwitchLanguage_EN:'Inglese',
-            textSwitchLanguage_DE:'Tedesco',
-            textSwitchLanguage_IT:'Italiano',
-            srcFlagSwitchLanguage:'resources/flagOfSpain.png',
+            botonCambioIdioma:"Lingua",
+            textSwitchLanguage_ES:"Spagnolo",
+            textSwitchLanguage_CA:"Catalano",
+            textSwitchLanguage_EN:"Inglese",
+            textSwitchLanguage_DE:"Tedesco",
+            textSwitchLanguage_IT:"Italiano",
+            srcFlagSwitchLanguage:"resources/flagOfSpain.png",
             navBarHome:"Inizio",
             navBarCountries:"Paesi",
             navBarAboutUs:"Chi siamo",
@@ -105,7 +165,16 @@ const translations = {
             pPorqueNuestraAgencia:"Lorem ipsum e il suo cazzo",
             titAboutUs:"Chi siamo",
             pAboutUs:"Siamo una squadra giovane e abbiamo Diego Hijano nella nostra squadra. 2+2 = Diego Hijano.",
-            pFooter:"© 2024 Raisen Club. Alle Rechte vorbehalten."
+            pFooter:"© 2024 Raisen Club. Alle Rechte vorbehalten.",
+
+            //TEXT FROM DESTINY PAGES
+            //Destiny 1 (Germany)
+            C1D1:"Monaco",
+            T1C1D1:"",
+            C2D1:"Berlino",
+            T1C2D1:"",
+            C3D1:"Colonia",
+            T1C3D1:"",
     }
 };
 
@@ -137,23 +206,45 @@ function updateLanguage() {
     document.getElementById('navBarCountries').innerText = translations[currentLang].navBarCountries;
     document.getElementById('navBarAboutUs').innerText = translations[currentLang].navBarAboutUs;
     //Section Banner
-    document.getElementById('subTitle').innerText = translations[currentLang].subTitle;
+    e_subtitle = document.getElementById('subTitle');
 
     //Main
     //Section "Destinies"
-    document.getElementById('titDestino1').innerText = translations[currentLang].titDestino1; 
-    document.getElementById('titDestino2').innerText = translations[currentLang].titDestino2;
-    document.getElementById('titDestino3').innerText = translations[currentLang].titDestino3;
+    e_titDestiny1 = document.getElementById('titDestino1');
+    e_titDestiny2 = document.getElementById('titDestino2');
+    e_titDestiny3 = document.getElementById('titDestino3');
     //Section "Why Our Agency?""
-    document.getElementById('titPorqueNuestraAgencia').innerText = translations[currentLang].titPorqueNuestraAgencia; 
-    document.getElementById('pPorqueNuestraAgencia').innerText = translations[currentLang].pPorqueNuestraAgencia;
+    document.getElementById('titPorqueNuestraAgencia')?.innerText = translations[currentLang].titPorqueNuestraAgencia; 
+    document.getElementById('pPorqueNuestraAgencia')?.innerText = translations[currentLang].pPorqueNuestraAgencia;
     //Section "About Us"
-    document.getElementById('titAboutUs').innerText = translations[currentLang].titAboutUs; 
-    document.getElementById('pAboutUs').innerText = translations[currentLang].pAboutUs;
+    document.getElementById('titAboutUs')?.innerText = translations[currentLang].titAboutUs; 
+    document.getElementById('pAboutUs')?.innerText = translations[currentLang].pAboutUs;
 
     //Footer
     //Section "Footer"
-    document.getElementById('pFooter').innerText = translations[currentLang].pFooter;
+    document.getElementById('pFooter')?.innerText = translations[currentLang].pFooter;
 
+    //Text from destiny pages
+    //Destiny 1
+    document.getElementById('C1D1')?.innerText = translations[currentLang].C1D1;
+    document.getElementById('T1C1D1')?.innerText = translations[currentLang].T1C1D1;
+    document.getElementById('C2D1')?.innerText = translations[currentLang].C2D1;
+    document.getElementById('T1C2D1')?.innerText = translations[currentLang].T1C2D1;
+    document.getElementById('C3D1')?.innerText = translations[currentLang].C3D1;
+    document.getElementById('T1C3D1')?.innerText = translations[currentLang].T1C3D1;
+    //Destiny 2
+    document.getElementById('C1D2')?.innerText = translations[currentLang].C1D2;
+    document.getElementById('T1C1D2')?.innerText = translations[currentLang].T1C1D2;
+    document.getElementById('C2D2')?.innerText = translations[currentLang].C2D2;
+    document.getElementById('T1C2D2')?.innerText = translations[currentLang].T1C2D2;
+    document.getElementById('C3D2')?.innerText = translations[currentLang].C3D2;
+    document.getElementById('T1C3D2')?.innerText = translations[currentLang].T1C3D2;
+
+
+
+    e_subtitle?.innerText = translations[currentLang].subTitle;
+    e_titDestiny1?.innerText = translations[currentLang].titDestino1; 
+    e_titDestiny2?.innerText = translations[currentLang].titDestino2;
+    e_titDestiny3?.innerText = translations[currentLang].titDestino3; 
 } 
 
