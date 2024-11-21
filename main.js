@@ -161,10 +161,11 @@ function updateLanguage() {
     const currentLang = localStorage.getItem('language');
     console.log(currentLang);   //Debug in console
 
-    
-    //__Change text from elements__
+    console.log(document.body.id); //Debug the name (id) of the page that is being loaded
 
-    //Header
+
+    //__Change text from elements__
+    //SHARED ELEMENTS
     //Navigation Bar
     document.getElementById('botonCambioIdioma').innerText = translations[currentLang].botonCambioIdioma;
     document.getElementById('imgBotonCambioIdioma_ES').title = translations[currentLang].textSwitchLanguage_ES; //we just change the title of the image, no need to change also the alternative text
@@ -175,39 +176,64 @@ function updateLanguage() {
     document.getElementById('navBarHome').innerText = translations[currentLang].navBarHome;
     document.getElementById('navBarCountries').innerText = translations[currentLang].navBarCountries;
     document.getElementById('navBarAboutUs').innerText = translations[currentLang].navBarAboutUs;
-    //Section Banner
-    document.getElementById('subTitle').innerText = translations[currentLang].subTitle;
-
-    //Main
-    //Section "Destinies"
-    document.getElementById('titDestino1').innerText = translations[currentLang].titDestino1;
-    document.getElementById('titDestino2').innerText = translations[currentLang].titDestino2;
-    document.getElementById('titDestino3').innerText = translations[currentLang].titDestino3;
-    //Section "Why Our Agency?"
-    document.getElementById('titPorqueNuestraAgencia').innerText = translations[currentLang].titPorqueNuestraAgencia; 
-    document.getElementById('pPorqueNuestraAgencia').innerText = translations[currentLang].pPorqueNuestraAgencia;
-    //Section "About Us"
-    document.getElementById('titAboutUs').innerText = translations[currentLang].titAboutUs;
-    document.getElementById('pAboutUs').innerText = translations[currentLang].pAboutUs;
-
     //Footer
     //Section "Footer"
     document.getElementById('pFooter').innerText = translations[currentLang].pFooter;
 
-    //Text from destiny pages
-    //Destiny 1
-    document.getElementById('C1D1').innerText = translations[currentLang].C1D1;
-    document.getElementById('T1C1D1').innerText = translations[currentLang].T1C1D1;
-    document.getElementById('C2D1').innerText = translations[currentLang].C2D1;
-    document.getElementById('T1C2D1').innerText = translations[currentLang].T1C2D1;
-    document.getElementById('C3D1').innerText = translations[currentLang].C3D1;
-    document.getElementById('T1C3D1').innerText = translations[currentLang].T1C3D1;
-    //Destiny 2
-    document.getElementById('C1D2').innerText = translations[currentLang].C1D2;
-    document.getElementById('T1C1D2').innerText = translations[currentLang].T1C1D2;
-    document.getElementById('C2D2').innerText = translations[currentLang].C2D2;
-    document.getElementById('T1C2D2').innerText = translations[currentLang].T1C2D2;
-    document.getElementById('C3D2').innerText = translations[currentLang].C3D2;
-    document.getElementById('T1C3D2').innerText = translations[currentLang].T1C3D2;
+
+
+
+    switch (document.body.id) { //check what page we're on
+        case "indexBody":
+            //Header
+            //Section Banner
+            document.getElementById('subTitle').innerText = translations[currentLang].subTitle;
+            //Main
+            //Section "Destinies"
+            document.getElementById('titDestino1').innerText = translations[currentLang].titDestino1;
+            document.getElementById('titDestino2').innerText = translations[currentLang].titDestino2;
+            document.getElementById('titDestino3').innerText = translations[currentLang].titDestino3;
+            //Section "Why Our Agency?"
+            document.getElementById('titPorqueNuestraAgencia').innerText = translations[currentLang].titPorqueNuestraAgencia; 
+            document.getElementById('pPorqueNuestraAgencia').innerText = translations[currentLang].pPorqueNuestraAgencia;
+            //Section "About Us"
+            document.getElementById('titAboutUs').innerText = translations[currentLang].titAboutUs;
+            document.getElementById('pAboutUs').innerText = translations[currentLang].pAboutUs;
+            break;
+    
+        case "destiny1Body":
+            document.getElementById('C1D1').innerText = translations[currentLang].C1D1;
+            document.getElementById('T1C1D1').innerText = translations[currentLang].T1C1D1;
+            document.getElementById('C2D1').innerText = translations[currentLang].C2D1;
+            document.getElementById('T1C2D1').innerText = translations[currentLang].T1C2D1;
+            document.getElementById('C3D1').innerText = translations[currentLang].C3D1;
+            document.getElementById('T1C3D1').innerText = translations[currentLang].T1C3D1;
+            break;
+        case "destiny2Body":
+            document.getElementById('C1D2').innerText = translations[currentLang].C1D2;
+            document.getElementById('T1C1D2').innerText = translations[currentLang].T1C1D2;
+            document.getElementById('C2D2').innerText = translations[currentLang].C2D2;
+            document.getElementById('T1C2D2').innerText = translations[currentLang].T1C2D2;
+            document.getElementById('C3D2').innerText = translations[currentLang].C3D2;
+            document.getElementById('T1C3D2').innerText = translations[currentLang].T1C3D2;
+            break;
+    
+        case "destiny3Body":
+            
+            break;
+        case "countriesBody":
+            
+            break;
+    
+        case "aboutUsBody":
+            
+            break;
+        case "TyCBody":
+            
+            break;
+
+        default:
+            break;
+    }
 } 
 
