@@ -1,5 +1,5 @@
 
-let currentLang = 'es';
+
 
 const translations = {
     es : {  //pageLanguage:'es',
