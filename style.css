@@ -104,7 +104,7 @@ a{
   .dropdown:hover .dropbtn {background-color: #3e8e41;}
   
 #banner{
-    background-image: url('resources/Banner.png');
+    background-image: url('resources/Principal1.jpg');
     background-size: cover;
     background-position: center;
     height:840px;
@@ -126,7 +126,7 @@ a{
 }
 
 #banner1{
-    background-image: url('resources/alemania.jfif');
+    background-image: url('resources/Alemania.jpg');
     background-size: cover;
     background-position: center;
     height:840px;
@@ -147,7 +147,7 @@ a{
     }
 }
 #banner2{
-    background-image: url('resources/italia.jpg');
+    background-image: url('resources/Italia.jfif');
     background-size: cover;
     background-position: center;
     height:840px;
@@ -168,7 +168,7 @@ a{
     }
 }
 #banner3{
-    background-image: url('resources/mexico.jfif');
+    background-image: url('resources/Mexico1.jfif');
     background-size: cover;
     background-position: center;
     height:840px;
