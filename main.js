@@ -21,9 +21,9 @@ const translationsWithPrizes = {
         T1C3D1:`¿Amante del carnaval? Colònia té tiene el mejor carnaval de toda Europa. Disfruta de un carnaval inolvidable por solo ${prizes.C3D1}€`,
     
         pTitDestino2: `Viaja a Italia desde ${updatePrizes()[1]}€ todo incluido`,
-        T1C1D2:`MILAN ${prizes.C1D2}€`,
-        T1C2D2:`ROMA ${prizes.C2D2}€`,
-        T1C3D2:`VENECIA${prizes.C3D2}€`,
+        T1C1D2:`Dicen que todos los caminos llevan a Roma. La ciudad capital del que fue el Imperio que bañó el Mediterraneo por siglos, el lugar de nacimiento de la cultura occidental, de las lenguas romances. Toda esta influencia se siente y se ve en la capital de Italia. Pasea por donde caminaban los emperadores romanos por solo ${prizes.C1D2}€`,
+        T1C2D2:`La segunda ciudad más grande de Italia. Una ciudad con una rica historia y preciosa arquitectura. Tanto si buscas una ciudad medieval como una urbe moderna y europea, ¡Milán es tu ciudad! Visitala por solo ${prizes.C2D2}€`,
+        T1C3D2:`FLORENCIA${prizes.C3D2}€`,
     
         pTitDestino3: `Viaja a Mexico desde ${updatePrizes()[2]}€ todo incluido`,
         T1C1D3:`${prizes.C1D3}€`,
