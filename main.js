@@ -1,31 +1,34 @@
 //Prizes
 var prizes = {
     //usad . para separar decimales de numeros enteros
-    C1D1 : '2199.99',    //München
-    C2D1 : '1259.89',    //Berlin
-    C3D1 : '1240.99',    //Köln
-    C1D2 : '2',    //Milano
-    C2D2 : '530',    //Roma
-    C3D2 : '500',    //Venezia
-    C1D3 : '500',    //
+    C1D1 : '2199.99',   //München
+    C2D1 : '1259.89',   //Berlin
+    C3D1 : '1240.99',   //Köln
+    C1D2 : '2',         //Roma
+    C2D2 : '530',       //Milano
+    C3D2 : '500',       //Firenze
+    C1D3 : '500',       //
     C2D3 : '500',
-    C3D3 : '500'
+    C3D3 : '500',
+    lowestOffer1 : '',
+    lowestOffer2 : '',
+    lowestOffer3 : ''
 }
 
 //Translations with prizes. for regular translations, check the json file
 const translationsWithPrizes = {
     es:{
-        pTitDestino1: `Viaja a Alemania desde ${updatePrizes()[0]}€ todo incluido`,
+        pTitDestino1: `Viaja a Alemania desde ${prizes.lowestOffer1}€ todo incluido`,
         T1C1D1:`La capital de Baviera, casa de la cerveza, y una de las ciudades con más relevancia en la historia reciente de Alemania y del mundo. Disfruta en uno de los mil Biergarten de Münich por solo ${prizes.C1D1}€`,
         T1C2D1:`No hay ciudad como Berlín. Con un viaje no te la acabas, pero con nosotros verás mucho por solo ${prizes.C2D1}€`,
         T1C3D1:`¿Amante del carnaval? Colònia té tiene el mejor carnaval de toda Europa. Disfruta de un carnaval inolvidable por solo ${prizes.C3D1}€`,
     
-        pTitDestino2: `Viaja a Italia desde ${updatePrizes()[1]}€ todo incluido`,
-        T1C1D2:`MILAN ${prizes.C1D2}€`,
-        T1C2D2:`ROMA ${prizes.C2D2}€`,
-        T1C3D2:`VENECIA${prizes.C3D2}€`,
+        pTitDestino2: `Viaja a Italia desde ${prizes.lowestOffer2}€ todo incluido`,
+        T1C1D2:`Dicen que todos los caminos llevan a Roma. La ciudad capital del que fue el Imperio que bañó el Mediterraneo por siglos, el lugar de nacimiento de la cultura occidental, de las lenguas romances. Toda esta influencia se siente y se ve en la capital de Italia. Pasea por donde caminaban los emperadores romanos por solo ${prizes.C1D2}€`,
+        T1C2D2:`La segunda ciudad más grande de Italia. Una ciudad con una rica historia y preciosa arquitectura. Tanto si buscas una ciudad medieval como una urbe moderna y europea, ¡Milán es tu ciudad! Visitala por solo ${prizes.C2D2}€`,
+        T1C3D2:`FLORENCIA${prizes.C3D2}€`,
     
-        pTitDestino3: `Viaja a Mexico desde ${updatePrizes()[2]}€ todo incluido`,
+        pTitDestino3: `Viaja a Mexico desde ${prizes.lowestOffer3}€ todo incluido`,
         T1C1D3:`${prizes.C1D3}€`,
         T1C2D3:`${prizes.C2D3}€`,
         T1C3D3:`${prizes.C3D3}€`
@@ -105,10 +108,13 @@ function updateLanguage(data) {
             //Section "Destinies"
             document.getElementById('titDestino1').innerText = data[currentLang].titDestino1;
             document.getElementById('T1A1MP').innerText = data[currentLang].T1A1MP;
+            document.getElementById('mainOfferD1').innerText = (`${prizes.lowestOffer1}€`);
             document.getElementById('titDestino2').innerText = data[currentLang].titDestino2;
             document.getElementById('T1A2MP').innerText = data[currentLang].T1A2MP;
+            document.getElementById('mainOfferD2').innerText = (`${prizes.lowestOffer2}€`);
             document.getElementById('titDestino3').innerText = data[currentLang].titDestino3;
             document.getElementById('T1A3MP').innerText = data[currentLang].T1A3MP;
+            document.getElementById('mainOfferD3').innerText = (`${prizes.lowestOffer3}€`);
             //Section "Why Our Agency?"
             document.getElementById('titPorqueNuestraAgencia').innerText = data[currentLang].titPorqueNuestraAgencia; 
             document.getElementById('pPorqueNuestraAgencia').innerText = data[currentLang].pPorqueNuestraAgencia;
@@ -118,12 +124,12 @@ function updateLanguage(data) {
             break;
     
         case "destiny1Body":
-            //Update Prizes from main page
+            //Update Prizes from
             updatePrizes();
             document.getElementById('Name1').innerText = data[currentLang].titDestino1;
             document.getElementById('subTitle1').innerText = data[currentLang].subTitle1;
             document.getElementById('titDestino1').innerText = data[currentLang].titDestino1;
-            document.getElementById('pTitDestino1').innerText = data[currentLang].pTitDestino1;
+            document.getElementById('pTitDestino1').innerText = translationsWithPrizes[currentLang].pTitDestino1;
             document.getElementById('C1D1').innerText = data[currentLang].C1D1;
             document.getElementById('T1C1D1').innerText = translationsWithPrizes[currentLang].T1C1D1;
             document.getElementById('C2D1').innerText = data[currentLang].C2D1;
@@ -133,12 +139,12 @@ function updateLanguage(data) {
             break;
 
         case "destiny2Body":
-            //Update Prizes from main page
+            //Update Prizes 
             updatePrizes();
             document.getElementById('Name2').innerText = data[currentLang].titDestino2;
             document.getElementById('subTitle2').innerText = data[currentLang].subTitle2;
             document.getElementById('titDestino2').innerText = data[currentLang].titDestino2;
-            document.getElementById('pTitDestino2').innerText = data[currentLang].pTitDestino2;
+            document.getElementById('pTitDestino2').innerText = translationsWithPrizes[currentLang].pTitDestino2;
             document.getElementById('C1D2').innerText = data[currentLang].C1D2;
             document.getElementById('T1C1D2').innerText = translationsWithPrizes[currentLang].T1C1D2;
             document.getElementById('C2D2').innerText = data[currentLang].C2D2;
@@ -155,7 +161,6 @@ function updateLanguage(data) {
         case "countriesBody":
             
             break;
-    
         case "aboutUsBody":
             
             break;
@@ -171,7 +176,6 @@ function updateLanguage(data) {
             document.getElementById('p8TyC').innerText = data[currentLang].p8TyC;
 
             break;
-
         default:
             break;
     }
@@ -179,21 +183,15 @@ function updateLanguage(data) {
 
 function updatePrizes() {
     //Update Prizes from main page
-    lowestOffers = [0.0,0.0,0.0]
     prizesD1 = [parseFloat(prizes.C1D1),parseFloat(prizes.C2D1),parseFloat(prizes.C3D1)];
     prizesD1.sort(function(a, b){return a - b});
-    lowestOffers[0] = prizesD1[0];
-    document.getElementById('mainOfferD1').innerText = `${lowestOffers[0]}€`;
+    prizes.lowestOffer1 = prizesD1[0];
     prizesD2 = [parseFloat(prizes.C1D2),parseFloat(prizes.C2D2),parseFloat(prizes.C3D2)];
     prizesD2.sort(function(a, b){return a - b});
-    lowestOffers[1] = prizesD2[0];
-    document.getElementById('mainOfferD2').innerText = `${lowestOffers[1]}€`;
+    prizes.lowestOffer2 = prizesD2[0];
     prizesD3 = [parseFloat(prizes.C1D3),parseFloat(prizes.C2D3),parseFloat(prizes.C3D3)];
     prizesD3.sort(function(a, b){return a - b});
-    lowestOffers[2] = prizesD3[0];
-    document.getElementById('mainOfferD3').innerText = `${lowestOffers[2]}€`;
-    console.log(lowestOffers);
-
-    return(lowestOffers);
+    prizes.lowestOffer3 = prizesD3[0];
+    console.log(prizes);
 }
 
