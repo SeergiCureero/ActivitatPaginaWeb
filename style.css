@@ -342,9 +342,61 @@ footer{
     color: #000000;
 }
 
+<<<<<<< HEAD
 .Button{
     background-color: #000000;
     padding: 20px;
     color: white;
     border-radius: 30px;
+=======
+
+.imagen1{
+    margin-top: -20px;
+    width: 510px;
+    border-radius: 20px;
+}
+.imagen2{
+    margin-top: -20px;
+    width: 430px;
+    border-radius: 20px;
+}
+.imagen3{
+    margin-top: -20px;
+    width: 600px;
+    border-radius: 20px;
+}
+.imagen4{
+    margin-top: -20px;
+    width: 432px;
+    border-radius: 20px;
+}
+.imagen5{
+    margin-top: -20px;
+    width: 450px;
+    border-radius: 20px;
+}
+.imagen6{
+    margin-top: -20px;
+    width: 450px;
+    border-radius: 20px;
+
+}
+
+.Fotos1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.titulo{
+font-size: 40px;
+}
+
+.Tex1{
+font-size: 20px;
+
+>>>>>>> c8c99d438377d97de6a44a6e05021c6f6352ea8e
 }
