@@ -268,7 +268,7 @@ a{
 }
 
 #aboutUscards article{
-    max-width: 570px;
+    width: 1200px;
     height: 580px;
     padding: 20px;
     text-align: center; 
