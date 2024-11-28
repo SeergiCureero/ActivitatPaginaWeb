@@ -15,14 +15,17 @@ var prizes = {
 //Translations with prizes. for regular translations, check the json file
 const translationsWithPrizes = {
     es:{
+        pTitDestino1: `Viaja a Alemania desde ${updatePrizes()[0]}€ todo incluido`,
         T1C1D1:`La capital de Baviera, casa de la cerveza, y una de las ciudades con más relevancia en la historia reciente de Alemania y del mundo. Disfruta en uno de los mil Biergarten de Münich por solo ${prizes.C1D1}€`,
         T1C2D1:`No hay ciudad como Berlín. Con un viaje no te la acabas, pero con nosotros verás mucho por solo ${prizes.C2D1}€`,
         T1C3D1:`¿Amante del carnaval? Colònia té tiene el mejor carnaval de toda Europa. Disfruta de un carnaval inolvidable por solo ${prizes.C3D1}€`,
     
+        pTitDestino2: `Viaja a Italia desde ${updatePrizes()[1]}€ todo incluido`,
         T1C1D2:`MILAN ${prizes.C1D2}€`,
         T1C2D2:`ROMA ${prizes.C2D2}€`,
         T1C3D2:`VENECIA${prizes.C3D2}€`,
     
+        pTitDestino3: `Viaja a Mexico desde ${updatePrizes()[2]}€ todo incluido`,
         T1C1D3:`${prizes.C1D3}€`,
         T1C2D3:`${prizes.C2D3}€`,
         T1C3D3:`${prizes.C3D3}€`
@@ -72,16 +75,13 @@ function updateLanguage(data) {
     //Read stored language
     currentLang = localStorage.getItem('language');
     console.log(currentLang);   //Debug in console
+    updatePrizes();
 
     console.log(document.body.id); //Debug the name (id) of the page that is being loaded 
 
     //__Change text from elements__
     //SHARED ELEMENTS
     //Navigation Bar
-    document.getElementById('botonCambioIdioma').innerText = data[currentLang].botonCambioIdioma;
-    document.getElementById('imgBotonCambioIdioma_ES').title = data[currentLang].textSwitchLanguage_ES; //we just change the title of the image, no need to change also the alternative text
-    document.getElementById('imgBotonCambioIdioma_CA').title = data[currentLang].textSwitchLanguage_CA;
-    document.getElementById('imgBotonCambioIdioma_EN').title = data[currentLang].textSwitchLanguage_EN;
     document.getElementById('navBarHome').innerText = data[currentLang].navBarHome;
     document.getElementById('navBarCountries').innerText = data[currentLang].navBarCountries;
     document.getElementById('navBarAboutUs').innerText = data[currentLang].navBarAboutUs;
@@ -104,8 +104,11 @@ function updateLanguage(data) {
             //Main
             //Section "Destinies"
             document.getElementById('titDestino1').innerText = data[currentLang].titDestino1;
+            document.getElementById('T1A1MP').innerText = data[currentLang].T1A1MP;
             document.getElementById('titDestino2').innerText = data[currentLang].titDestino2;
+            document.getElementById('T1A2MP').innerText = data[currentLang].T1A2MP;
             document.getElementById('titDestino3').innerText = data[currentLang].titDestino3;
+            document.getElementById('T1A3MP').innerText = data[currentLang].T1A3MP;
             //Section "Why Our Agency?"
             document.getElementById('titPorqueNuestraAgencia').innerText = data[currentLang].titPorqueNuestraAgencia; 
             document.getElementById('pPorqueNuestraAgencia').innerText = data[currentLang].pPorqueNuestraAgencia;
@@ -115,6 +118,8 @@ function updateLanguage(data) {
             break;
     
         case "destiny1Body":
+            //Update Prizes from main page
+            updatePrizes();
             document.getElementById('Name1').innerText = data[currentLang].titDestino1;
             document.getElementById('subTitle1').innerText = data[currentLang].subTitle1;
             document.getElementById('titDestino1').innerText = data[currentLang].titDestino1;
@@ -128,6 +133,8 @@ function updateLanguage(data) {
             break;
 
         case "destiny2Body":
+            //Update Prizes from main page
+            updatePrizes();
             document.getElementById('Name2').innerText = data[currentLang].titDestino2;
             document.getElementById('subTitle2').innerText = data[currentLang].subTitle2;
             document.getElementById('titDestino2').innerText = data[currentLang].titDestino2;
@@ -141,6 +148,8 @@ function updateLanguage(data) {
             break;
     
         case "destiny3Body":
+            //Update Prizes from main page
+            updatePrizes();
             
             break;
         case "countriesBody":
@@ -168,17 +177,23 @@ function updateLanguage(data) {
     }
 } 
 
-
 function updatePrizes() {
     //Update Prizes from main page
+    lowestOffers = [0.0,0.0,0.0]
     prizesD1 = [parseFloat(prizes.C1D1),parseFloat(prizes.C2D1),parseFloat(prizes.C3D1)];
     prizesD1.sort(function(a, b){return a - b});
-    document.getElementById('mainOfferD1').innerText = (`${prizesD1[0]}€`);
+    lowestOffers[0] = prizesD1[0];
+    document.getElementById('mainOfferD1').innerText = `${lowestOffers[0]}€`;
     prizesD2 = [parseFloat(prizes.C1D2),parseFloat(prizes.C2D2),parseFloat(prizes.C3D2)];
     prizesD2.sort(function(a, b){return a - b});
-    document.getElementById('mainOfferD2').innerText = (`${prizesD2[0]}€`);
+    lowestOffers[1] = prizesD2[0];
+    document.getElementById('mainOfferD2').innerText = `${lowestOffers[1]}€`;
     prizesD3 = [parseFloat(prizes.C1D3),parseFloat(prizes.C2D3),parseFloat(prizes.C3D3)];
     prizesD3.sort(function(a, b){return a - b});
-    document.getElementById('mainOfferD3').innerText = (`${prizesD3[0]}€`);
+    lowestOffers[2] = prizesD3[0];
+    document.getElementById('mainOfferD3').innerText = `${lowestOffers[2]}€`;
+    console.log(lowestOffers);
+
+    return(lowestOffers);
 }
 

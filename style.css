@@ -108,7 +108,7 @@ a{
     background-size: cover;
     background-position: center;
     height:840px;
-    width: auto;
+    width: auto;    
     color: var(--blanco);
     text-align: center;
     display: flex;
