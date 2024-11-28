@@ -5,7 +5,7 @@
     --color2 : #FF9F43;
     --color3 : #F7F1E1;
     --blanco : #FFFFFF;
-    --negro : #2C3E50;
+    --negro : #000000;
     --whiteSmoke : #F5F5F5;
     --bgColor : #F9F5EB;
     --bgColorDestinos: #FFFFFF;
@@ -223,7 +223,68 @@ a{
     }
 
 }
+#porqueNuestraAgenciaCards{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
 
+#porqueNuestraAgenciaCards article{
+    max-width: 1200px;
+    height: 580px;
+    padding: 20px;
+    text-align: center; 
+    border-radius: 30px;
+    background-color: var(--bgColorDestinos);
+
+    h2{
+        font-size: 40px;
+    }
+    p{
+        font-size: 20px;
+    }
+    img{
+        margin-top: -20px;
+        max-width: 350px;
+        border-radius: 20px;
+    }
+    h3{
+        font-size: 30px;
+    }
+
+}
+#aboutUscards{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+#aboutUscards article{
+    max-width: 570px;
+    height: 580px;
+    padding: 20px;
+    text-align: center; 
+    border-radius: 30px;
+    background-color: var(--bgColorDestinos);
+
+    h2{
+        font-size: 40px;
+    }
+    p{
+        font-size: 20px;
+    }
+    img{
+        margin-top: -20px;
+        max-width: 350px;
+        border-radius: 20px;
+    }
+    h3{
+        font-size: 30px;
+    }
+
+}
 #ofertasDestinos a{
     color: var(--negro);
 }
