@@ -201,7 +201,7 @@ a{
 #ofertasDestinos article{
     flex: 1 1 300px;
     max-width: 550px;
-    height: 550px;
+    height: 580px;
     padding: 20px;
     text-align: center; 
     border-radius: 30px;
@@ -266,4 +266,8 @@ footer{
     h2{
         font-size: 60px;
     }
+}
+
+#pAboutUs{
+    color: #000000;
 }
