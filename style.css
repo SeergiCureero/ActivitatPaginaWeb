@@ -104,7 +104,7 @@ a{
   .dropdown:hover .dropbtn {background-color: #3e8e41;}
   
 #banner{
-    background-image: url('resources/Banner.png');
+    background-image: url('resources//img/general/Banner.png');
     background-size: cover;
     background-position: center;
     height:840px;
@@ -147,7 +147,7 @@ a{
     }
 }
 #banner2{
-    background-image: url('resources/italia.jpg');
+    background-image: url('resources/img/destino2/italia.jpg');
     background-size: cover;
     background-position: center;
     height:840px;
