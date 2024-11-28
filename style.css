@@ -21,6 +21,9 @@
     color: var(--color3);
 }
 
+main{
+    color: #000000;
+}
 body{
     font-family: var(--fuenteDeLetra);
     background-color:var(--bgColor);
