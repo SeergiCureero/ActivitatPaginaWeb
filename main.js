@@ -8,7 +8,10 @@ const prizes = {
     C3D2 : 30,      
     C1D3 : 60,       
     C2D3 : 3,
-    C3D3 : 2
+    C3D3 : 2,
+    OtherOffers1 : 30,
+    OtherOffers2 : 30,
+    OtherOffers3 : 30
 }
 var lowestPrizes = [];
 
@@ -29,7 +32,11 @@ const translationsWithPrizes = {
         pTitDestino3: `Viaja a México desde ${lowestPrizes[2]}€ todo incluido`,
         T1C1D3:`${prizes.C1D3}€`,
         T1C2D3:`${prizes.C2D3}€`,
-        T1C3D3:`${prizes.C3D3}€`
+        T1C3D3:`${prizes.C3D3}€`,
+
+        T1H1COUNTRIES:`A partir de ${prizes.OtherOffers1}€`,
+        T1H2COUNTRIES:`A partir de ${prizes.OtherOffers2}€`,
+        T1H3COUNTRIES:`A partir de ${prizes.OtherOffers3}€`
     },
     ca:{
         pTitDestino1: `Viatja a Alemanya des de ${lowestPrizes[0]}€ tot inclòs`,
@@ -37,19 +44,40 @@ const translationsWithPrizes = {
         T1C2D1:`No hi ha ciutat com Berlin. Amb un viatje no te l'acabes, però amb nosaltres veuras molt per sols ${prizes.C2D1}€`,
         T1C3D1:`Amant del carnaval? Colònia té el millor carnaval de tota Europa. Gaudeix d'un carnaval inoblidable per sols ${prizes.C3D1}€`,
     
-        pTitDestino2: `Viaja a Italia desde ${lowestPrizes[1]}€ todo incluido`,
-        T1C1D2:`Dicen que todos los caminos llevan a Roma. La ciudad capital del que fue el Imperio que bañó el Mediterraneo por siglos, el lugar de nacimiento de la cultura occidental, de las lenguas romances. Toda esta influencia se siente y se ve en la capital de Italia. Pasea por donde caminaban los emperadores romanos por solo ${prizes.C1D2}€`,
-        T1C2D2:`La segunda ciudad más grande de Italia. Una ciudad con una rica historia y preciosa arquitectura. Tanto si buscas una ciudad medieval como una urbe moderna y europea, ¡Milán es tu ciudad! Visitala por solo ${prizes.C2D2}€`,
+        pTitDestino2: `Viatja a Itàlia des de ${lowestPrizes[1]}€ tot inclòs`,
+        T1C1D2:`Diuen que tots els camins porten a Roma. La ciutat del que va ser l'Imperi que banyà el Mediterrani per segles, el lloc on va naixer la cultura occidental, les llengües romaniques. Tota aquesta influencia se sent i es veu a la que és avui la capital d'Itàlia. Passeja  per on caminaven emperadors romans per sols ${prizes.C1D2}€`,
+        T1C2D2:`La segona ciutat més gran d'Itàlia. Una ciutat amb una rica història i preciosa arquitectura. Tant si busques una ciutat medieval o una metropoli moderna i europea, Milà és la teva ciutat! Visita-la per sols ${prizes.C2D2}€`,
         T1C3D2:`FLORENCIA ${prizes.C3D2}€`,
     
-        pTitDestino3: `Viaja a Mexico desde ${lowestPrizes[2]}€ todo incluido`,
+        pTitDestino3: `Viatja a Mexico desde ${lowestPrizes[2]}€ todo incluido`,
         T1C1D3:`${prizes.C1D3}€`,
         T1C2D3:`${prizes.C2D3}€`,
-        T1C3D3:`${prizes.C3D3}€`
+        T1C3D3:`${prizes.C3D3}€`,
+
+        T1H1COUNTRIES:`A partir de ${prizes.OtherOffers1}€`,
+        T1H2COUNTRIES:`A partir de ${prizes.OtherOffers2}€`,
+        T1H3COUNTRIES:`A partir de ${prizes.OtherOffers3}€`
 
     },
     en:{
+        pTitDestino1: `Travel to Germany for ${lowestPrizes[0]}€ all included`,
+        T1C1D1:`The capital of Bavaria, the home of the beer, and one of the cities with the most relevance in the recent history of Germany and the world. Enjoy in on of the thousands Biergarten of Munich for only ${prizes.C1D1}€`,
+        T1C2D1:`There is no city like Berlin. With just one trip you won't see all that there is to see, but with us you'll be one step closer for only ${prizes.C2D1}€`,
+        T1C3D1:`Carnival lover? Cologne has THE best carnival in all Europe. Enjoy an unforgettable carnival for only ${prizes.C3D1}€`,
+    
+        pTitDestino2: `Travel to Italy for ${lowestPrizes[1]}€ all included`,
+        T1C1D2:`It's said that all roads lead to Rome. The city that once served as capital of the Empire that surfed the waves of the Mediterranean sea for centuries, the birthplace of western culture and latin languages. You can feel and see all this influence in what is nowadays the capital of Italy. Go for a walk stepping on the same roads the emperors of Rome once walked uppon for only ${prizes.C1D2}€`,
+        T1C2D2:`The second biggest city in Italy. A city with a rich history and a gorgeous architecture. It doesn't matter if you're looking for a medieval big city or a modern an european metropolis, Milan is your city! Visit it for only ${prizes.C2D2}€`,
+        T1C3D2:`FLORENCIA ${prizes.C3D2}€`,
+    
+        pTitDestino3: `Travel to Mexico for ${lowestPrizes[2]}€ all included`,
+        T1C1D3:`${prizes.C1D3}€`,
+        T1C2D3:`${prizes.C2D3}€`,
+        T1C3D3:`${prizes.C3D3}€`,
 
+        T1H1COUNTRIES:`Prizes starting at ${prizes.OtherOffers1}€`,
+        T1H2COUNTRIES:`Prizes starting at ${prizes.OtherOffers2}€`,
+        T1H3COUNTRIES:`Prizes starting at ${prizes.OtherOffers3}€`
     },
 };
 
@@ -102,7 +130,8 @@ function updateLanguage(data) {
     document.getElementById('navBarAboutUs').innerText = data[currentLang].navBarAboutUs;
     //Footer
     //Section "Footer"
-    document.getElementById('pFooter').innerText = data[currentLang].pFooter;
+    document.getElementById('pFooter').childNodes[0].textContent  = data[currentLang].pFooter;
+    document.getElementById('TyCFooter').innerText = data[currentLang].TyCFooter;
 
 
 
@@ -119,6 +148,7 @@ function updateLanguage(data) {
             document.getElementById('buttonBanner').innerText = data[currentLang].buttonBanner;
             //Main
             //Section "Destinies"
+            document.getElementById('DestinosRecomendados').innerText = data[currentLang].DestinosRecomendados;
             document.getElementById('titDestino1').innerText = data[currentLang].titDestino1;
             document.getElementById('T1A1MP').innerText = data[currentLang].T1A1MP;
             document.getElementById('mainOfferD1').innerText = (`${lowestPrizes[0]}€`);
@@ -134,6 +164,7 @@ function updateLanguage(data) {
             //Section "About Us"
             document.getElementById('titAboutUs').innerText = data[currentLang].titAboutUs;
             document.getElementById('pAboutUs').innerText = data[currentLang].pAboutUs;
+            document.getElementById('aAboutUs').innerText = data[currentLang].aAboutUs;
             break;
     
         case "destiny1Body":
@@ -172,6 +203,17 @@ function updateLanguage(data) {
             
             break;
         case "countriesBody":
+            document.getElementById('ourHighlightedDestinies').innerText = data[currentLang].ourHighlightedDestinies;
+            document.getElementById('highlightedDestiny1').innerText = data[currentLang].highlightedDestiny1;
+            document.getElementById('highlightedDestiny2').innerText = data[currentLang].highlightedDestiny2;
+            document.getElementById('highlightedDestiny3').innerText = data[currentLang].highlightedDestiny3;
+            document.getElementById('otherOffers').innerText = data[currentLang].otherOffers;
+            document.getElementById('T1COUNTRIES').innerText = data[currentLang].T1COUNTRIES;
+            document.getElementById('T2COUNTRIES').childNodes[0].textContent = data[currentLang].T2COUNTRIES;
+            document.getElementById('TyCCOUNTRIES').innerText = data[currentLang].TyCCOUNTRIES;
+            document.getElementById('H1COUNTRIES').innerText = data[currentLang].H1COUNTRIES;
+            document.getElementById('H2COUNTRIES').innerText = data[currentLang].H2COUNTRIES;
+            document.getElementById('H3COUNTRIES').innerText = data[currentLang].H3COUNTRIES;
             
             break;
         case "aboutUsBody":
@@ -182,7 +224,7 @@ function updateLanguage(data) {
             document.getElementById('p1TyC').innerText = data[currentLang].p1TyC;
             document.getElementById('p2TyC').innerText = data[currentLang].p2TyC;
             document.getElementById('p3TyC').innerText = data[currentLang].p3TyC;
-            document.getElementById('p4TyC').childNodes[0].innerText = data[currentLang].p4TyC;
+            document.getElementById('p4TyC').childNodes[0].textContent = data[currentLang].p4TyC;
             document.getElementById('p5TyC').innerText = data[currentLang].p5TyC;
             document.getElementById('p6TyC').innerText = data[currentLang].p6TyC;
             document.getElementById('p7TyC').innerText = data[currentLang].p7TyC;
