@@ -131,7 +131,12 @@ function updateLanguage(data) {
     //Footer
     //Section "Footer"
     document.getElementById('pFooter').childNodes[0].textContent  = data[currentLang].pFooter;
-    document.getElementById('TyCFooter').innerText = data[currentLang].TyCFooter;
+    try {
+        document.getElementById('TyCFooter').innerText = data[currentLang].TyCFooter;
+    } catch (error) {
+        console.log("estem al TyC, no cal ficar l'enllaç al footer")
+    }
+    
 
 
 
