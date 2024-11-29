@@ -96,6 +96,7 @@ function updateLanguage(data) {
     //__Change text from elements__
     //SHARED ELEMENTS
     //Navigation Bar
+    document.getElementById('botonCambioIdioma').innerText = data[currentLang].botonCambioIdioma;
     document.getElementById('navBarHome').innerText = data[currentLang].navBarHome;
     document.getElementById('navBarCountries').innerText = data[currentLang].navBarCountries;
     document.getElementById('navBarAboutUs').innerText = data[currentLang].navBarAboutUs;
