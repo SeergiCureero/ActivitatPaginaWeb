@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Hammersmith+One&display=swap" rel="stylesheet">
 </head>
-<body onload="carregarJSON()" id="indexBody">
+<body onload="carregarTraduccions()" id="indexBody">
     <header>
         <nav id="navBar">
                 <ul class="navegador">
@@ -35,12 +35,17 @@
                         <li><a href="Paises.html" id="navBarCountries">PAÍSES</a></li>
                         <li><a href="AboutUs.html" id="navBarAboutUs">SOBRE NOSOTROS</a></li>
                     </div>
+                    <div class="Redes">
+                        <li><a href=""><img src="resources/img/general/Redes/instagram.png" alt=""></a></li>
+                        <li><a href=""><img src="resources/img/general/Redes/youtube.png" alt=""></a></li>
+                        <li><a href=""><img src="resources/img/general/Redes/tik-tok.png" alt=""></a></li>
+                    </div>
                 </ul>
         </nav>
-        <section id="banner">
+        <section id="banner" class="bannerPlantilla">
             <h2 id="agencyName">Reisen Club</h2>
             <h1 id="subTitle">Agencia de viajes</h1> 
-            <a class="ButtonBanner" href="Paises.html">Paises</a>           
+            <a class="ButtonBanner" href="Paises.html" id="buttonBanner">Paises</a>           
         </section>
     </header>  
     <main>
@@ -73,29 +78,30 @@
                     <h3 id="mainOfferD3">1000€</h3>
                 </article>
             </a>
-                
         </section>
         <section id="porqueNuestraAgencia">
             <h2 id="titPorqueNuestraAgencia">Por qué elegir nuestra agencia</h2>
             <section id="porqueNuestraAgenciaCards"> 
                     <article id="destino1">
                         <p id="pPorqueNuestraAgencia">En Raisen Club te ofrecemos viajes personalizados y experiencias únicas. Con nuestro asesoramiento experto, te ayudamos a elegir el destino ideal y organizar todo lo que necesitas para un viaje sin preocupaciones.</p>
+                        <img src="resources/img/general/Equipo.jfif" alt="FotoAboutUs">
                     </article>  
-
-             </section>
+            </section>
+        </section>
         <section id="aboutUs">
             <h2 id="titAboutUs">Sobre nosotros</h2>
             <section id="aboutUscards"> 
                 <article id="destino1">
-                    <p id="pPorqueNuestraAgencia">
+                    <p id="pAboutUs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, minima quos veniam placeat consequatur atque ducimus voluptatibus harum error magnam quidem amet saepe voluptate provident deserunt cupiditate aliquam quasi natus.</p>
+                    <a class="Button" href="AboutUs.html" id="aAboutUs">Más sobre nosotros</a>
+
                 </article>
-         </section>
-            <p id="pAboutUs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, minima quos veniam placeat consequatur atque ducimus voluptatibus harum error magnam quidem amet saepe voluptate provident deserunt cupiditate aliquam quasi natus.</p>
+            </section> 
         </section>
     </main>  
     <footer>
         <section id="footer">
-            <p id="pFooter">© 2024 Raisen Club. Todos los derechos reservados. <a href="terminos-y-condiciones.html">Terminos y condiciones</a></p>
+            <p id="pFooter">© 2024 Raisen Club. Todos los derechos reservados. <a href="terminos-y-condiciones.html" id="TyCFooter">Terminos y condiciones</a></p>
         </section>
     </footer>
 </body>
