@@ -107,13 +107,7 @@ a{
   .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 
-<<<<<<< Updated upstream
-  
-#banner{
-    background-image: url('resources/img/general/Principal1.jpg');
-=======
 .bannerPlantilla{
->>>>>>> Stashed changes
     background-size: cover;
     background-position: center;
     height:840px;
@@ -145,13 +139,13 @@ a{
     }
 } 
 #banner1{
-    background-image: url('resources/Alemania.jpg');
+    background-image: url('resources/img/destino1/Alemania.jpg');
 }
 #banner2{
     background-image: url('resources/img/destino2/Italia.jfif');
 }
 #banner3{
-    background-image: url('resources/Mexico1.jfif');
+    background-image: url('resources/img/destino3/Mexico1.jfif');
 }
 #bannerAU{
     background-image: url('resources/img/general/sobreNosotros/fotoGrupo.jfif');
@@ -365,7 +359,21 @@ footer{
 .Tex1{
     font-size: 20px;
 }
-
+.Precios{
+    text-align: center ;
+}
+.Precio{
+    font-size: 25px;
+    background-color: #b8533e;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 20px;
+    display: inline-block;
+}
+.Contacto{
+    font-size: 18px; 
+    text-align: center;  
+}
 .Redes{
     display: flex;
     position: fixed;
