@@ -342,13 +342,12 @@ footer{
     color: #000000;
 }
 
-<<<<<<< HEAD
 .Button{
     background-color: #000000;
     padding: 20px;
     color: white;
     border-radius: 30px;
-=======
+}
 
 .imagen1{
     margin-top: -20px;
@@ -392,11 +391,9 @@ footer{
 }
 
 .titulo{
-font-size: 40px;
+    font-size: 40px;
 }
 
 .Tex1{
-font-size: 20px;
-
->>>>>>> c8c99d438377d97de6a44a6e05021c6f6352ea8e
+    font-size: 20px;
 }
