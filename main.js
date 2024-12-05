@@ -3,7 +3,7 @@ const prizes = {
     C1D1 : 2199.99,   
     C2D1 : 1259.89,   
     C3D1 : 1240.99,   
-    C1D2 : ,         
+    C1D2 : 12,         
     C2D2 : 567,       
     C3D2 : 30,      
     C1D3 : 60,       
@@ -29,10 +29,10 @@ const translationsWithPrizes = {
         T1C2D2:`La segunda ciudad más grande de Italia. Una ciudad con una rica historia y preciosa arquitectura. Tanto si buscas una ciudad medieval como una urbe moderna y europea, ¡Milán es tu ciudad! Visitala por solo ${prizes.C2D2}€`,
         T1C3D2:`FLORENCIA ${prizes.C3D2}€`,
     
-        pTitDestino3: `Viaja a México desde ${lowestPrizes[2]}€ todo incluido`,
-        T1C1D3:`${prizes.C1D3}€`,
-        T1C2D3:`${prizes.C2D3}€`,
-        T1C3D3:`${prizes.C3D3}€`,
+        pTitDestino3: `Viaja a México con todo incluido desde ${lowestPrizes[2]}€.`,
+        T2C1D3:`Descubre Ciudad de México desde ${prizes.C1D3}€ todo incluido.`,
+        T2C2D3:`Disfruta en Texcoco de Mora desde ${prizes.C2D3}€ todo incluido.`,
+        T2C3D3:`Viaja a Guadalajara desde ${prizes.C3D3}€ todo incluido.`,
 
         T1H1COUNTRIES:`A partir de ${prizes.OtherOffers1}€`,
         T1H2COUNTRIES:`A partir de ${prizes.OtherOffers2}€`,
@@ -49,10 +49,10 @@ const translationsWithPrizes = {
         T1C2D2:`La segona ciutat més gran d'Itàlia. Una ciutat amb una rica història i preciosa arquitectura. Tant si busques una ciutat medieval o una metropoli moderna i europea, Milà és la teva ciutat! Visita-la per sols ${prizes.C2D2}€`,
         T1C3D2:`FLORENCIA ${prizes.C3D2}€`,
     
-        pTitDestino3: `Viatja a Mexico desde ${lowestPrizes[2]}€ todo incluido`,
-        T1C1D3:`${prizes.C1D3}€`,
-        T1C2D3:`${prizes.C2D3}€`,
-        T1C3D3:`${prizes.C3D3}€`,
+        pTitDestino3: `Viatja a Mèxic amb tot inclos des de ${lowestPrizes[2]}€.`,
+        T2C1D3:`Descobreix Ciudad de México des de ${prizes.C1D3}€ tot inclos.`,
+        T2C2D3:`Disfruta a Texcoco de Mora des de ${prizes.C2D3}€ tot inclos.`,
+        T2C3D3:`Viatja a Guadalajara des de ${prizes.C3D3}€ tot inclos.`,
 
         T1H1COUNTRIES:`A partir de ${prizes.OtherOffers1}€`,
         T1H2COUNTRIES:`A partir de ${prizes.OtherOffers2}€`,
@@ -205,6 +205,21 @@ function updateLanguage(data) {
         case "destiny3Body":
             //Update Prizes from main page
             updatePrizes();
+            document.getElementById('Name3').innerText = data[currentLang].titDestino3;
+            //document.getElementById('titDestino3').innerText = data[currentLang].titDestino3;
+            //document.getElementById('pTitDestino3').innerText = translationsWithPrizes[currentLang].pTitDestino3;
+            document.getElementById('C1D3').innerText = data[currentLang].C1D3;
+            document.getElementById('T1C1D3').innerText = data[currentLang].T1C1D3;
+            document.getElementById('T2C1D3').innerText = translationsWithPrizes[currentLang].T2C1D3;
+            document.getElementById('T3C1D3').childNodes[0].textContent = data[currentLang].TextForMoreInfo;
+            document.getElementById('C2D3').innerText = data[currentLang].C2D3;
+            document.getElementById('T1C2D3').innerText = data[currentLang].T1C2D3;
+            document.getElementById('T2C2D3').innerText = translationsWithPrizes[currentLang].T2C2D3;
+            document.getElementById('T3C2D3').childNodes[0].textContent = data[currentLang].TextForMoreInfo;
+            document.getElementById('C3D3').innerText = data[currentLang].C3D3;
+            document.getElementById('T1C3D3').innerText = data[currentLang].T1C3D3;
+            document.getElementById('T2C3D3').innerText = translationsWithPrizes[currentLang].T2C3D3;
+            document.getElementById('T3C3D3').childNodes[0].textContent = data[currentLang].TextForMoreInfo;
             
             break;
         case "countriesBody":
