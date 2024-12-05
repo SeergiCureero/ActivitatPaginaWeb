@@ -1,6 +1,12 @@
 {
     "lang":"es",
     "es" : {  
+            "pageNameD1":"Alemania - ReisenClub",
+            "pageNameD2":"Italia - ReisenClub",
+            "pageNameD3":"México - ReisenClub",
+            "pageNameTyC":"Términos y Condiciones - ReisenClub",
+            "pageNameAU":"Sobre Nosotros - ReisenClub",
+            "pageNameCOUNTRIES":"Países - ReisenClub",
             "botonCambioIdioma":"IDIOMA",
             "textSwitchLanguage_ES":"Castellano",
             "textSwitchLanguage_CA":"Catalán",
@@ -17,7 +23,7 @@
             "titDestino1":"Alemania",
             "titDestino2":"Italia",
             "titDestino3":"México",
-            "titPorqueNuestraAgencia":"Porque elegir nuestra agencia",
+            "titPorqueNuestraAgencia":"Por qué elegir nuestra agencia",
             "pPorqueNuestraAgencia":"En Raisen Club te ofrecemos viajes personalizados y experiencias únicas. Con nuestro asesoramiento experto, te ayudamos a elegir el destino ideal y a organizar todo lo que necesitas para disfrutar de un viaje sin preocupaciones.",
             "titAboutUs":"Sobre nosotros",
             "pAboutUs":"Somos una agencia de viajes joven y tenemos a Diego Hijano (2+2) en nuestro equipo.",
@@ -37,8 +43,8 @@
             "C2D1":"Berlín",
             "C3D1":"Colonia",
             "_ITALY_":"",
-            "C1D2":"Milán",
-            "C2D2":"Roma",
+            "C1D2":"Roma",
+            "C2D2":"Milán",
             "C3D2":"Florencia",
             "_MEXICO_":"",
             "C1D3":"Ciudad de México",
@@ -57,10 +63,21 @@
             "H2COUNTRIES":"Medellín, Colombia",
             "H3COUNTRIES":"Buenos Aires, Argentina",
 
+            "__DESTINY1__":"",
+            "T1C1D1":"La capital de Baviera, casa de la cerveza, y una de las ciudades con más relevancia en la historia reciente de Alemania y del mundo.",
+            "T1C2D1":"No hay ciudad como Berlín. Con un viaje no te la acabas, pero con nosotros verás mucho.",
+            "T1C3D1":"¿Amante del carnaval? Köln tiene el mejor carnaval de toda Europa.",
+
+            "__DESTINY2__":"",
+            "T1C1D2":"Dicen que todos los caminos llevan a Roma. La ciudad capital del que fue el Imperio que bañó el Mediterraneo por siglos, el lugar de nacimiento de la cultura occidental, de las lenguas romances. Toda esta influencia se siente y se ve en la capital de Italia.",
+            "T1C2D2":"La segunda ciudad más grande de Italia. Una ciudad con una rica historia y preciosa arquitectura.",
+            "T1C3D2":"FLORENCIA",
+
             "__DESTINY3__":"",
             "T1C1D3":"Ciudad de México es un destino conocido por su rica gastronomía y su fascinante historia. Entre sus platos más famosos están los tacos al pastor, los chiles en nogada y los tamales. Los lugares más emblemáticos son: el Zócalo, la Catedral Metropolitana y el Palacio Nacional, el Templo Mayor, conocido por su historia y el Castillo de Chapultepec, con vistas impresionantes de la ciudad",
             "T1C2D3":"Texcoco de Mora, en el Estado de México, es conocido por su rica gastronomía, que tienen platos como tamales de frijol, tlacoyos y mixiote. Entre sus lugares más emblemáticos están la Parroquia de la Asunción, el Palacio Municipal, el Lago de Texcoco, y la Zona Arqueológica de Texcoco, donde se encuentran vestigios de la antigua ciudad mexica. Es un destino ideal para quienes buscan historia, tradición y una experiencia gastronómica auténtica.",
             "T1C3D3":"Guadalajara es un destino que combina gastronomía, cultura y tradición. Además de probar platos como la birria y los tacos al pastor, puedes disfrutar de una noche de mariachi en la Plaza de los Mariachis, recorrer el Mercado San Juan de Dios o explorar el Barrio de Tlaquepaque, famoso por su artesanía y comida típica. La ciudad también ofrece actividades culturales como el ballet folklórico y visitas a museos de arte, como el Museo de las Artes y el Museo de Arte de Zapopan. Si te gusta la naturaleza este es tu sitio, el Bosque Los Colomos es ideal. Guadalajara fusiona tradición y modernidad en una experiencia única.",
+            
             "TextForMoreInfo":"Para más información llámanos a +35 685780630 o escríbenos a ",
 
 
@@ -77,6 +94,12 @@
             "p8TyC":"¡Muchas gracias por contratar nuestros servicios!"
         },
     "ca" : {  
+            "pageNameD1":"Alemanya - ReisenClub",
+            "pageNameD2":"Itàlia - ReisenClub",
+            "pageNameD3":"Mèxic - ReisenClub",
+            "pageNameTyC":"Termes i Condicions - ReisenClub",
+            "pageNameAU":"Sobre Nosaltres - ReisenClub",
+            "pageNameCOUNTRIES":"Països - ReisenClub",
             "botonCambioIdioma":"LLENGUA",
             "textSwitchLanguage_ES":"Castellà",
             "textSwitchLanguage_CA":"Català",
@@ -112,8 +135,8 @@
             "C2D1":"Berlin",
             "C3D1":"Còlonia",
             "_ITALY_":"",
-            "C1D2":"Milà",
-            "C2D2":"Roma",
+            "C1D2":"Roma",
+            "C2D2":"Milà",
             "C3D2":"Florència",
             "_MEXICO_":"",
             "C1D3":"Ciudad de Mexico",
@@ -133,11 +156,22 @@
             "H2COUNTRIES":"Medellín, Colòmbia",
             "H3COUNTRIES":"Buenos Aires, Argentina",
 
+            "__DESTINY1__":"",
+            "T1C1D1":"La capital de Baviera, casa de la cerveza, y una de las ciudades con más relevancia en la historia reciente de Alemania y del mundo.",
+            "T1C2D1":"No hay ciudad como Berlín. Con un viaje no te la acabas, pero con nosotros verás mucho.",
+            "T1C3D1":"¿Amante del carnaval? Köln tiene el mejor carnaval de toda Europa.",
+
+            "__DESTINY2__":"",
+            "T1C1D2":"Diuen que tots els camins porten a Roma. La ciutat que donà nom al que féu l'Imperi que banyà el Mediterrani per segles, el lloc de naixament de la cultura occidental, de les llenguas romaniques. Tota aquesta influència se sent i es veu a la capital d'Itàlia.",
+            "T1C2D2":"La segona ciutat més gran d'Itàlia. Una ciutat amb una rica història i una preciosa arquitectura.",
+            "T1C3D2":"FLORENCIA",
+
             "__DESTINY3__":"",
             "T1C1D3":"Ciudad de México és un destí conegut per la seva rica gastronomia i la seva fascinant història. Entre els seus plats més famosos estàn els tacos al pastor, els xiles en nogada i els tamales. Els llocs més emblemàtics son: el Zócalo, la Catedral Metropolitana, el Palacio Nacional, el Templo Mayor  -conegut per la seva història-, i el Castillo de Chapultepec -amb vistes impressionants de la ciutat.",
             "T1C2D3":"Texcoco de Mora és coneguda per la seva rica gastronomia, que tenen plats com tamals de frijol, tlacoyos i mixiote. Entre els seus llocs més emblemàtics estàn la Parroquia de la Asunción, el Palacio Municipal, el Lago de Texcoco, i la Zona Arqueològica de Texcoco, on es troben vestigis de l'antiga ciutat mexica. És un destí ideal per al que busquen història, tradició i una experiència gastronomica autèntica.",
-            "T1C3D3":"Guadalajara es un destino que combina gastronomía, cultura y tradición. Además de probar platos como la birria y los tacos al pastor, puedes disfrutar de una noche de mariachi en la Plaza de los Mariachis, recorrer el Mercado San Juan de Dios o explorar el Barrio de Tlaquepaque, famoso por su artesanía y comida típica. La ciudad también ofrece actividades culturales como el ballet folklórico y visitas a museos de arte, como el Museo de las Artes y el Museo de Arte de Zapopan. Si te gusta la naturaleza este es tu sitio, el Bosque Los Colomos es ideal. Guadalajara fusiona tradición y modernidad en una experiencia única.",
-            "TextForMoreInfo":"Para más información llámanos a +35 685780630 o escríbenos a ",
+            "T1C3D3":"Guadalajara és un destí que combina gastronomia, cultura i tradició. A més de provar plats com la birria i els tacos al pastor, pots gaudir d'una nit mariachi a la Plaza de los Mariachis, recorrer el Mercado San Juan de Dios o explorar el Barrio de Tlaquepaque, famós per la seva artesania i menjar típic. La ciutat també ofereix activitats culturals com el ballet folklòric i visites a museus d'art, com el Museo de las Artes i el Museo de Arte de Zapopan. Si t'agrada la natura aquest és el teu lloc, el Bosque Los Colomos es ideal. Guadalajara fusiona tradició i modernitat en una experiència única.",
+            
+            "TextForMoreInfo":"Per a més informació trucans a +35 685780630 o escriu-nos a ",
 
             "__TERMS AND CONDITIONS__":"",
             "t1TyC":"Termes i Condicions Generals",
@@ -152,6 +186,12 @@
     
         },      
     "en" : {  
+            "pageNameD1":"Germany - ReisenClub",
+            "pageNameD2":"Italy - ReisenClub",
+            "pageNameD3":"Mexico - ReisenClub",
+            "pageNameTyC":"Terms and Conditions - ReisenClub",
+            "pageNameAU":"About Us - ReisenClub",
+            "pageNameCOUNTRIES":"Countries - ReisenClub",
             "botonCambioIdioma":"LANGUAGE",
             "textSwitchLanguage_ES":"Spanish",
             "textSwitchLanguage_CA":"Catalan",
