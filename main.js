@@ -127,7 +127,6 @@ function updateLanguage(data) {
     document.getElementById('botonCambioIdioma').innerText = data[currentLang].botonCambioIdioma;
     document.getElementById('navBarHome').innerText = data[currentLang].navBarHome;
     document.getElementById('navBarCountries').innerText = data[currentLang].navBarCountries;
-    document.getElementById('navBarAboutUs').innerText = data[currentLang].navBarAboutUs;
     //Footer
     //Section "Footer"
     document.getElementById('pFooter').childNodes[0].textContent  = data[currentLang].pFooter;
@@ -247,10 +246,6 @@ function updateLanguage(data) {
             document.getElementById('T1H1COUNTRIES').innerText = data[currentLang].T1H1COUNTRIES;
             document.getElementById('T1H2COUNTRIES').innerText = data[currentLang].T1H2COUNTRIES;
             document.getElementById('T1H3COUNTRIES').innerText = data[currentLang].T1H3COUNTRIES;
-            
-            break;
-        case "aboutUsBody":
-            document.getElementsByTagName('title').innerText = data[currentLang].pageNameAU;
             
             break;
         case "TyCBody":
