@@ -1,14 +1,15 @@
-//Prizes
+//Precios
+//Por el momento los precios se editan editando el documento main.js. La idea es crear un JSON donde se puedan editar los precios, pero da problemas que no valen la pena resolver por el momento.
 const prizes = {
-    C1D1 : 2199.99,   
-    C2D1 : 1259.89,   
-    C3D1 : 1240.99,   
-    C1D2 : 12,         
-    C2D2 : 567,       
-    C3D2 : 30,      
-    C1D3 : 60,       
-    C2D3 : 3840,
-    C3D3 : 184,
+    C1D1 : 2199.99, //Münich, DE
+    C2D1 : 1259.89, //Berlin, DE
+    C3D1 : 1240.99, //Köln, DE
+    C1D2 : 12,      //Roma, IT
+    C2D2 : 567,     //Milano, IT
+    C3D2 : 30,      //Firenze, IT
+    C1D3 : 60,      //CDMX, MX
+    C2D3 : 3840,    //Texcoco de Mora, MX
+    C3D3 : 184,     //Guadalajara, MX
     OtherOffers1 : 30,
     OtherOffers2 : 30,
     OtherOffers3 : 30
