@@ -34,7 +34,8 @@ a{
     background-color: var(--negro);
     width: 100%;
     height: auto;
-    display: inline ;
+    display: flex;
+    justify-content: center;
     ul{
         list-style: none;
     }  
@@ -50,7 +51,10 @@ a{
     border-radius: 50px;
     font-size: 20px;
 } 
-
+.NavCentro{
+    display: flex;
+    justify-content: center;
+}
 .Inicio{
     display: flex;
     gap: 50px;
