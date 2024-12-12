@@ -4,9 +4,9 @@ const prizes = {
     C1D1 : 2199.99, //Münich, DE
     C2D1 : 1259.89, //Berlin, DE
     C3D1 : 1240.99, //Köln, DE
-    C1D2 : 12,      //Roma, IT
+    C1D2 : 893,      //Roma, IT
     C2D2 : 567,     //Milano, IT
-    C3D2 : 30,      //Firenze, IT
+    C3D2 : 4530,      //Firenze, IT
     C1D3 : 60,      //CDMX, MX
     C2D3 : 3840,    //Texcoco de Mora, MX
     C3D3 : 184,     //Guadalajara, MX
@@ -112,7 +112,7 @@ function carregarTraduccions() {
         console.error('Error:', error);
       });
       
-    }
+}
 
 function updateLanguage(data) {
     //Read stored language
@@ -272,9 +272,6 @@ function updatePrizes() {
     prizesD1 = [parseFloat(prizes.C1D1),parseFloat(prizes.C2D1),parseFloat(prizes.C3D1)];
     prizesD1.sort(function(a, b){return a - b});
     lowestPrizes[0] = prizesD1[0];
-    console.log("Lowest Prize");
-    console.log(lowestPrizes[0]);
-    console.log(typeof(lowestPrizes[0]));
     prizesD2 = [parseFloat(prizes.C1D2),parseFloat(prizes.C2D2),parseFloat(prizes.C3D2)];
     prizesD2.sort(function(a, b){return a - b});
     lowestPrizes[1] = prizesD2[0];
