@@ -13,14 +13,13 @@
 *{
     font-family: var(--fuenteDeLetra);
 }
-
-main{
-    color: var(--negro);
-}
 body{
     background-color:var(--color3);
     color: var(--color3);
     margin-top: 50px;
+}
+main{
+    color: var(--negro);
 }
 a{
     text-decoration: none;
@@ -40,7 +39,7 @@ a{
         color: var(--negro);
     }
 }
-.ButtonBanner{
+.buttonBanner{
     color: var(--negro);
     background-color: var(--color3);
     margin-top: 50px;
@@ -49,7 +48,7 @@ a{
     font-size: 20px;
 } 
 
-.Inicio{
+.inicio{
     display: flex;
     gap: 50px;
     font-size: 18px;
@@ -73,6 +72,8 @@ a{
     border: none;
     border-radius: 30px;
 }
+
+
   
 .dropdown-content {
     display: none;
@@ -100,9 +101,14 @@ a{
     border-radius: 50%;
 }
 
-.dropdown:hover .dropdown-content {display: block;}
-  
-.dropdown:hover .dropbtn {background-color: var(--color11);}
+.dropdown:hover {
+    .dropdown-content {
+        display: block;
+    }
+    .dropbtn {
+        background-color: var(--color11);
+    }
+}
 
 
 .bannerPlantilla{
@@ -145,9 +151,6 @@ a{
 #banner3{
     background-image: url('resources/img/destino3/Mexico1.jfif');
 }
-#bannerAU{
-    background-image: url('resources/img/general/sobreNosotros/fotoGrupo.jfif');
-}
 
 
 #ofertasDestinos{
@@ -161,11 +164,11 @@ a{
 #ofertasDestinos article{
     flex: 1 1 300px;
     max-width: 550px;
-    height: 580px;
+    height:75vh;
     padding: 20px;
     text-align: center; 
     border-radius: 30px;
-    background-color: var(--color3);
+    background-color: var(--color1);
 
     h2{
         font-size: 40px;
@@ -288,7 +291,7 @@ footer{
     }
 }
 
-.TitlePrincipal{
+.titlePrincipal{
     text-align: center;
     margin-top: 0px;
     margin-bottom: -30px;
@@ -302,7 +305,7 @@ footer{
     margin-bottom: 60px;
 }
 
-.Button{
+.button{
     background-color: var(--negro);
     padding: 20px;
     color: var(--color3);
