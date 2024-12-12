@@ -62,7 +62,7 @@ a{
     
 }
 #navBarHome{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 16px;
     font-size: 18px;
     border: none;
@@ -376,6 +376,10 @@ footer{
 .Contacto{
     font-size: 18px; 
     text-align: center;  
+    a{
+        color: #202020;
+    }
+    
 }
 .Redes{
     display: flex;
@@ -387,6 +391,7 @@ footer{
     img{
         width: 30px;
     }
+    
 }
 
 
