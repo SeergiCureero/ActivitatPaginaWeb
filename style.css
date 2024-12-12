@@ -16,16 +16,6 @@
     font-family: var(--fuenteDeLetra);
 }
 
-#title{
-    color: var(--color1);
-}
-#titArt1{
-    color: var(--color2);
-}
-#titArt2{
-    color: var(--color3);
-}
-
 main{
     color: var(--negro);
 }
@@ -34,19 +24,23 @@ body{
     color: var(--blanco);
     margin-top: 50px;
 }
-
 a{
     text-decoration: none;
+    color: var(--color3);
 }
-#navBar{
+.navBar{
     position: fixed;
     top: 0;
     background-color: var(--negro);
     width: 100%;
     height: auto;
     display: inline ;
-  
-    
+    ul{
+        list-style: none;
+    }  
+    .aDestinos{
+        color: var(--negro);
+    }
 }
 .ButtonBanner{
     color: #000000;
@@ -55,10 +49,7 @@ a{
     padding: 20px;
     border-radius: 50px;
     font-size: 20px;
-}
-#navBar ul{
-    list-style: none;
-}
+} 
 
 .Inicio{
     display: flex;
