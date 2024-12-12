@@ -53,8 +53,17 @@ a{
     display: flex;
     gap: 50px;
     font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    
 }
-
+#navBarHome{
+    background-color: white;
+    padding: 16px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+}
 /*___BOTÓN DROPDOWN___*/
 .dropbtn {
     background-color: var(--color1);
