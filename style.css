@@ -30,6 +30,13 @@ a{
     left: 0;
     margin-left: 30px;
 }
+
+.navegador{
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    gap: 30px;
+}
 .navBar{
     position: fixed;
     top: 0;
@@ -46,6 +53,18 @@ a{
         color: var(--negro);
     }
 }
+.redes{
+    display: flex;
+    position: fixed;
+    right: 0;
+    gap: 30px;
+    margin: 50px;
+
+    img{
+        width: 30px;
+    }
+}
+
 .buttonBanner{
     color: var(--negro);
     background-color: var(--color3);
@@ -54,18 +73,12 @@ a{
     border-radius: 50px;
     font-size: 20px;
 } 
-
-.navCentro{
-    display: flex;
-    justify-content: center;
-}
 .inicio{
     display: flex;
     font-size: 18px;
     align-items: center;
     justify-content: center;
     gap: 30px;
-    
 }
 #navBarHome{
     background-color: rgb(255, 255, 255);
@@ -74,6 +87,9 @@ a{
     border: none;
     border-radius: 30px;
 }
+
+
+
 /*___BOTÓN DROPDOWN___*/
 .dropbtn {
     background-color: var(--color1);
@@ -83,9 +99,6 @@ a{
     border: none;
     border-radius: 30px;
 }
-
-
-  
 .dropdown-content {
     display: none;
     position: absolute;
@@ -278,12 +291,7 @@ footer{
     color: var(--color3);
 }
 
-.navegador{
-    display: flex;
-    align-items: center;
-    padding-left: 0;
-    gap: 30px;
-}
+
 
 
 #porqueNuestraAgencia{
@@ -388,18 +396,6 @@ footer{
     text-align: center;  
     a{
         color: #202020;
-    }
-    
-}
-.Redes{
-    display: flex;
-    position: fixed;
-    right: 0;
-    gap: 30px;
-    margin: 50px;
-
-    img{
-        width: 30px;
     }
     
 }
