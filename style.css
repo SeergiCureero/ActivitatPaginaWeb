@@ -1,14 +1,12 @@
 :root{
     /*--nombreVariable: valorVariable;*/
     --fuenteDeLetra : 'Hammersmith One', sans-serif;
-    --color1 : #1ABC9C;
-    --color2 : #FF9F43;
+    --color1 : #04AA6D;
+    --color11: #3e8e41;
+    --color2 : #ff7c00;
     --color3 : #F7F1E1;
-    --blanco : #FFFFFF;
-    --negro : #000000;
     --whiteSmoke : #F5F5F5;
-    --bgColor : #F9F5EB;
-    --bgColorDestinos: #FFFFFF;
+    --negro : #202020;
 }
 
 /*Hacemos referencia a todos los elementos de la pagina para asignarles la misma fuente de letra y demás atributos y no tener que ir repitiendo elemento a elemento*/
@@ -16,60 +14,64 @@
     font-family: var(--fuenteDeLetra);
 }
 
-#title{
-    color: var(--color1);
-}
-#titArt1{
-    color: var(--color2);
-}
-#titArt2{
-    color: var(--color3);
-}
-
 main{
     color: var(--negro);
 }
 body{
-    background-color:var(--bgColor);
-    color: var(--blanco);
+    background-color:var(--color3);
+    color: var(--color3);
     margin-top: 50px;
 }
-
 a{
     text-decoration: none;
+    color: var(--color3);
 }
-#navBar{
+.navBar{
     position: fixed;
     top: 0;
     background-color: var(--negro);
     width: 100%;
     height: auto;
-    display: inline ;
-  
-    
+    display: flex;
+    justify-content: center;
+    ul{
+        list-style: none;
+    }  
+    .aDestinos{
+        color: var(--negro);
+    }
 }
 .ButtonBanner{
-    color: #000000;
-    background-color: white;
+    color: var(--negro);
+    background-color: var(--color3);
     margin-top: 50px;
     padding: 20px;
     border-radius: 50px;
     font-size: 20px;
+} 
+.NavCentro{
+    display: flex;
+    justify-content: center;
 }
-#navBar ul{
-    list-style: none;
-}
-
 .Inicio{
     display: flex;
     gap: 50px;
     font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    
 }
-
+#navBarHome{
+    background-color: white;
+    padding: 16px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+}
 /*___BOTÓN DROPDOWN___*/
 .dropbtn {
-    background-color: #04AA6D;
-    color: white;
+    background-color: var(--color1);
+    color:var(--color3);
     padding: 16px;
     font-size: 18px;
     border: none;
@@ -79,7 +81,7 @@ a{
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: var(--color3);
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     border-radius: 6px;
@@ -91,8 +93,7 @@ a{
         cursor: pointer;
         margin-left: -40px;
         a:hover {
-            background-color: #ddd;
-            color: var(--whiteSmoke);
+            background-color: var(--whiteSmoke);
         }
     }
 }
@@ -105,7 +106,7 @@ a{
 
 .dropdown:hover .dropdown-content {display: block;}
   
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {background-color: var(--color11);}
 
 
 .bannerPlantilla{
@@ -113,7 +114,7 @@ a{
     background-position: center;
     height:840px;
     width: auto;
-    color: var(--blanco);
+    color: var(--color3);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -168,7 +169,7 @@ a{
     padding: 20px;
     text-align: center; 
     border-radius: 30px;
-    background-color: var(--bgColorDestinos);
+    background-color: var(--color3);
 
     h2{
         font-size: 40px;
@@ -204,7 +205,7 @@ a{
     padding: 20px;
     text-align: center; 
     border-radius: 30px;
-    background-color: var(--bgColorDestinos);
+    background-color: var(--color3);
     margin-top: -30px;
 
     h2{
@@ -236,7 +237,7 @@ a{
     padding: 20px;
     text-align: center; 
     border-radius: 30px;
-    background-color: var(--bgColorDestinos);
+    background-color: var(--color3);
     margin-top: -30px;
     margin-bottom: 50px;
 
@@ -264,7 +265,7 @@ footer{
     display: flex;
     justify-content: center;
     background-color: var(--negro);
-    color: var(--blanco);
+    color: var(--color3);
 }
 
 .navegador{
@@ -279,7 +280,7 @@ footer{
     h2{
         font-size: 60px;
         margin-left: 32px;
-        color: #000000;
+        color: var(--negro);
     }
 }
 
@@ -301,14 +302,14 @@ footer{
 }
 
 #pAboutUs{
-    color: #000000;
+    color: var(--negro);
     margin-bottom: 60px;
 }
 
 .Button{
-    background-color: #000000;
+    background-color: var(--negro);
     padding: 20px;
-    color: white;
+    color: var(--color3);
     border-radius: 30px;
 }
 
@@ -366,8 +367,8 @@ footer{
 }
 .Precio{
     font-size: 25px;
-    background-color: #ff7c00;
-    border: 2px solid black;
+    background-color: var(--color2);
+    border: 2px solid var(--negro);
     border-radius: 30px;
     padding: 20px;
     display: inline-block;
