@@ -26,6 +26,11 @@ a{
     text-decoration: none;
     color: var(--color3);
 }
+.Idiomas{
+    position: fixed;
+    left: 0;
+    margin-left: 30px;
+}
 .navBar{
     position: fixed;
     top: 0;
@@ -34,7 +39,8 @@ a{
     height: auto;
     display: flex;
     justify-content: center;
-    ul{
+    
+    li{
         list-style: none;
     }  
     .aDestinos{
@@ -55,10 +61,10 @@ a{
 }
 .Inicio{
     display: flex;
-    gap: 50px;
     font-size: 18px;
     align-items: center;
     justify-content: center;
+    gap: 30px;
     
 }
 #navBarHome{
@@ -271,7 +277,8 @@ footer{
 .navegador{
     display: flex;
     align-items: center;
-    gap: 50px;
+    padding-left: 0;
+    gap: 30px;
 }
 
 
