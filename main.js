@@ -169,7 +169,6 @@ function updateLanguage(data) {
             //Section "About Us"
             document.getElementById('titAboutUs').innerText = data[currentLang].titAboutUs;
             document.getElementById('pAboutUs').innerText = data[currentLang].pAboutUs;
-            document.getElementById('aAboutUs').innerText = data[currentLang].aAboutUs;
             break;
     
         case "destiny1Body":

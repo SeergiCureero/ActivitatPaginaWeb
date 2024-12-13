@@ -25,12 +25,8 @@ a{
     text-decoration: none;
     color: var(--color3);
 }
-.idiomas{
-    position: fixed;
-    left: 0;
-    margin-left: 30px;
-}
 
+/*___BARRA DE NAVEGACIÓN___*/
 .navegador{
     display: flex;
     align-items: center;
@@ -64,6 +60,25 @@ a{
         width: 30px;
     }
 }
+#navBarHome{
+    background-color: var(--whiteSmoke);
+    padding: 16px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+}
+.inicio{
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.idiomas{
+    position: fixed;
+    left: 0;
+    margin-left: 30px;
+}
 
 .buttonBanner{
     color: var(--negro);
@@ -73,20 +88,8 @@ a{
     border-radius: 50px;
     font-size: 20px;
 } 
-.inicio{
-    display: flex;
-    font-size: 18px;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-}
-#navBarHome{
-    background-color: rgb(255, 255, 255);
-    padding: 16px;
-    font-size: 18px;
-    border: none;
-    border-radius: 30px;
-}
+
+
 
 
 
@@ -117,14 +120,12 @@ a{
             background-color: var(--whiteSmoke);
         }
     }
-}
-  
+} 
 .imgLanguage {
     width: 25px;
     height: 25px;
     border-radius: 50%;
 }
-
 .dropdown:hover {
     .dropdown-content {
         display: block;
@@ -135,6 +136,7 @@ a{
 }
 
 
+/*___BANNERS___*/
 .bannerPlantilla{
     background-size: cover;
     background-position: center;
@@ -154,26 +156,26 @@ a{
         margin-top: -50px;
         font-size: 30px;
     }
-}
-#banner{
-    background-image: url('resources/img/general/Principal1.jpg');
-
-    h2{
-        font-size: 100px;
+    #banner{
+        background-image: url('resources/img/general/Principal1.jpg');
+    
+        h2{
+            font-size: 100px;
+        }
+        h1{
+            margin-top: -70px;
+            font-size: 40px;
+        }
+    } 
+    #banner1{
+        background-image: url('resources/img/destino1/Alemania.jpg');
     }
-    h1{
-        margin-top: -70px;
-        font-size: 40px;
+    #banner2{
+        background-image: url('resources/img/destino2/Italia.jfif');
     }
-} 
-#banner1{
-    background-image: url('resources/img/destino1/Alemania.jpg');
-}
-#banner2{
-    background-image: url('resources/img/destino2/Italia.jfif');
-}
-#banner3{
-    background-image: url('resources/img/destino3/Mexico1.jfif');
+    #banner3{
+        background-image: url('resources/img/destino3/Mexico1.jfif');
+    }    
 }
 
 
@@ -182,108 +184,82 @@ a{
     justify-content: center;
     gap: 20px;
     margin-top: 50px;
+    article{
+        flex: 1 1 300px;
+        max-width: 550px;
+        height:600px;
+        padding: 20px;
+        text-align: center; 
+        border-radius: 30px;
+        background-color: var(--color1);
+    
+        h2{
+            font-size: 40px;
+        }
+        p{
+            font-size: 20px;
+        }
+        img{
+            margin-top: -20px;
+            max-width: 350px;
+            border-radius: 20px;
+        }
+        .foto1{
+            margin-top: -20px;
+            height: 240px;
+            max-width: 350px;
+            border-radius: 20px;
+        }
+        h3{
+            font-size: 30px;
+        }
+        a{
+            color: var(--negro);
+        }
+    }
 }
 
 
-#ofertasDestinos article{
-    flex: 1 1 300px;
-    max-width: 550px;
-    height:75vh;
-    padding: 20px;
-    text-align: center; 
-    border-radius: 30px;
-    background-color: var(--color1);
-
-    h2{
-        font-size: 40px;
-    }
-    p{
-        font-size: 20px;
-    }
-    img{
-        margin-top: -20px;
-        max-width: 350px;
-        border-radius: 20px;
-    }
-    .foto1{
-        margin-top: -20px;
-        height: 240px;
-        max-width: 350px;
-        border-radius: 20px;
-    }
-    h3{
-        font-size: 30px;
-    }
-
-}
-#porqueNuestraAgenciaCards{
+/*Cartas*/
+.card{
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    article{
+        width: 1200px;
+        height: auto;
+        padding: 20px;
+        text-align: center; 
+        border-radius: 30px;
+        background-color: var(--color1);
+        color: var(--color3);
+        margin-top: -30px;
+        margin-bottom: 50px;
+        p{
+            font-size: 20px;
+            margin-bottom: 70px;
+        }
+        img{
+            margin-top: -20px;
+            max-width: 350px;
+            border-radius: 20px;
+        }
+        /*No se aplica el estilo general del .card*/
+        #pAboutUs{
+            color: var(--color3);
+        }
+    }
 }
-
-#porqueNuestraAgenciaCards article{
-    max-width: 1200px;
-    height: 400px;
-    padding: 20px;
-    text-align: center; 
-    border-radius: 30px;
-    background-color: var(--color3);
-    margin-top: -30px;
-
+.tituloCard{
+    text-align: center;
     h2{
-        font-size: 40px;
+        font-size: 100px;
     }
-    p{
-        font-size: 20px;
-        margin-bottom: 70px;
-    }
-    img{
-        margin-top: -20px;
-        max-width: 350px;
-        border-radius: 20px;
-    }
-    h3{
-        font-size: 30px;
-    }
-
-}
-#aboutUscards{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
 }
 
-#aboutUscards article{
-    width: 1200px;
-    height: 200px;
-    padding: 20px;
-    text-align: center; 
-    border-radius: 30px;
-    background-color: var(--color3);
-    margin-top: -30px;
-    margin-bottom: 50px;
 
-    h2{
-        font-size: 40px;
-    }
-    p{
-        font-size: 20px;
-    }
-    img{
-        margin-top: -20px;
-        max-width: 350px;
-        border-radius: 20px;
-    }
-    h3{
-        font-size: 30px;
-    }
 
-}
-#ofertasDestinos a{
-    color: var(--negro);
-}
-
+/*___Footer___*/
 footer{
     display: flex;
     justify-content: center;
@@ -292,24 +268,6 @@ footer{
 }
 
 
-
-
-#porqueNuestraAgencia{
-    text-align: center;
-    h2{
-        font-size: 60px;
-        margin-left: 32px;
-        color: var(--negro);
-    }
-}
-
-#aboutUs{
-    text-align: center;
-    h2{
-        font-size: 60px;
-        margin-left: 32px;
-    }
-}
 
 .titlePrincipal{
     text-align: center;
@@ -320,50 +278,13 @@ footer{
     }
 }
 
-#pAboutUs{
-    color: var(--negro);
-    margin-bottom: 60px;
-}
 
-.button{
-    background-color: var(--negro);
-    padding: 20px;
-    color: var(--color3);
-    border-radius: 30px;
-}
-
-.imagen1{
-    margin-top: -20px;
-    width: 510px;
-    border-radius: 20px;
-}
+/*Imagenes Destinos*/
 .imagen{
     margin-top: -20px;
-    width: 430px;
+    height: 300px;
     border-radius: 20px;
 }
-.imagen3{
-    margin-top: -20px;
-    width: 600px;
-    border-radius: 20px;
-}
-.imagen4{
-    margin-top: -20px;
-    width: 432px;
-    border-radius: 20px;
-}
-.imagen5{
-    margin-top: -20px;
-    width: 450px;
-    border-radius: 20px;
-}
-.imagen6{
-    margin-top: -20px;
-    width: 450px;
-    border-radius: 20px;
-
-}
-
 .fotos{
     display: flex;
     align-items: center;
@@ -371,7 +292,17 @@ footer{
     gap: 200px;
     margin-top: 40px;
     margin-bottom: 20px;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
+
+
+
+
+
+
+
+
 
 .titulo{
     font-size: 40px;
@@ -380,6 +311,8 @@ footer{
 .Tex1{
     font-size: 20px;
 }
+
+/*Los precios salen en */
 .precios{
     text-align: center ;
 }
@@ -391,11 +324,12 @@ footer{
     padding: 20px;
     display: inline-block;
 }
-.Contacto{
+/*Contacto aparece en la pagina del destino 3 (MEXICO)*/
+.contacto{
     font-size: 18px; 
     text-align: center;  
     a{
-        color: #202020;
+        color: var(--negro);
     }
     
 }
