@@ -175,7 +175,7 @@ function updateLanguage(data) {
             //Update Prizes from
             updatePrizes();
             document.getElementsByTagName('title').innerText = data[currentLang].pageNameD1;
-            document.getElementById('Name1').innerText = data[currentLang].titDestino1;
+            document.getElementById('title1').innerText = data[currentLang].titDestino1;
             document.getElementById('subTitle1').innerText = data[currentLang].subTitle1;
             document.getElementById('titDestino1').innerText = data[currentLang].titDestino1;
             document.getElementById('pTitDestino1').innerText = translationsWithPrizes[currentLang].pTitDestino1;
@@ -194,7 +194,7 @@ function updateLanguage(data) {
             //Update Prizes 
             updatePrizes();
             document.getElementsByTagName('title').innerText = data[currentLang].pageNameD2;
-            document.getElementById('Name2').innerText = data[currentLang].titDestino2;
+            document.getElementById('title2').innerText = data[currentLang].titDestino2;
             document.getElementById('subTitle2').innerText = data[currentLang].subTitle2;
             document.getElementById('titDestino2').innerText = data[currentLang].titDestino2;
             document.getElementById('pTitDestino2').innerText = translationsWithPrizes[currentLang].pTitDestino2;
@@ -213,7 +213,7 @@ function updateLanguage(data) {
             //Update Prizes from main page
             updatePrizes();
             document.getElementsByTagName('title').innerText = data[currentLang].pageNameD3;
-            document.getElementById('Name3').innerText = data[currentLang].titDestino3;
+            document.getElementById('title3').innerText = data[currentLang].titDestino3;
             //document.getElementById('titDestino3').innerText = data[currentLang].titDestino3;
             //document.getElementById('pTitDestino3').innerText = translationsWithPrizes[currentLang].pTitDestino3;
             document.getElementById('C1D3').innerText = data[currentLang].C1D3;

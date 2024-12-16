@@ -15,30 +15,42 @@
 </head>
 <body onload="carregarTraduccions()" id="TyCBody">
     <header>
-        <nav id="navBar">
-            <div class="Nav">
-                <ul class="navegador">
+        <nav class="navBar" id="navBar">
+            <ul class="navegador">
+                <li class="idiomas">
+                    <div class="dropdown">
+                        <button class="dropbtn" id="botonCambioIdioma">IDIOMA</button>
+                        <div class="dropdown-content">
+                            <ul id="dropdown_UL">
+                                <li><button onclick="switchLang('es')" id="botonCambioIdioma_ES" class="buttonSwitchLanguage"><img src="resources/img/general/banderas/flagOfSpain.png" alt="Español" title="Español" id="imgBotonCambioIdioma_ES" class="imgLanguage"></button></li>
+                                <li><button onclick="switchLang('ca')" id="botonCambioIdioma_CA" class="buttonSwitchLanguage"><img src="resources/img/general/banderas/flagOfCatalonia.png" alt="Català" title="Català" id="imgBotonCambioIdioma_CA" class="imgLanguage"></button></li>
+                                <li><button onclick="switchLang('en')" id="botonCambioIdioma_EN" class="buttonSwitchLanguage"><img src="resources/img/general/banderas/flagOfEngland.png" alt="English" title="English" id="imgBotonCambioIdioma_EN" class="imgLanguage"></button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <div class="inicio">
+                    <li><a href="index.html" id="navBarHome">INICIO</a></li>
                     <li>
-                        <!--<button onclick="switchLanguage()" id="buttonSwitchLanguage"><img id="imgButtonSwitchLanguage" src="resources/flagOfCatalonia.png" alt="català" title="català"></button>-->
                         <div class="dropdown">
-                            <button class="dropbtn" id="botonCambioIdioma">IDIOMA</button>
+                            <button class="dropbtn" id="botonCambioPaises"><a href="Paises.html" id="navBarCountries">PAÍSES</a></button>
                             <div class="dropdown-content">
-                                <ul id="dropdown_UL">
-                                    <li><button onclick="switchLang('es')" id="botonCambioIdioma_ES" class="buttonSwitchLanguage"><img src="resources/img/general/banderas/flagOfSpain.png" alt="Español" title="Español" id="imgBotonCambioIdioma_ES" class="imgLanguage"></button></li>
-                                    <li><button onclick="switchLang('ca')" id="botonCambioIdioma_CA" class="buttonSwitchLanguage"><img src="resources/img/general/banderas/flagOfCatalonia.png" alt="Català" title="Català" id="imgBotonCambioIdioma_CA" class="imgLanguage"></button></li>
-                                    <li><button onclick="switchLang('en')" id="botonCambioIdioma_EN" class="buttonSwitchLanguage"><img src="resources/img/general/banderas/flagOfEngland.png" alt="English" title="English" id="imgBotonCambioIdioma_EN" class="imgLanguage"></button></li>
+                                <ul id="dropdown_ULPaises">
+                                    <li><a href="Destino1.html" class="aDestinos">Alemania</a></li>
+                                    <li><a href="Destino2.html" class="aDestinos">Italia</a></li>
+                                    <li><a href="Destino3.html" class="aDestinos">México</a></li>
                                 </ul>
                             </div>
                         </div>
                     </li>
-                    <div class="Inicio">
-                        <li><a href="index.html" id="navBarHome">INICIO</a></li>
-                        <li><a href="Paises.html" id="navBarCountries">PAÍSES</a></li>
-                    </div>
-                </ul>
-            </div>
-            
-        </nav>
+                </div>
+                <div class="redes">
+                    <li><a href=""><img src="resources/img/general/Redes/instagram.png" alt=""></a></li>
+                    <li><a href=""><img src="resources/img/general/Redes/youtube.png" alt=""></a></li>
+                    <li><a href=""><img src="resources/img/general/Redes/tik-tok.png" alt=""></a></li>
+                </div>
+            </ul>
+    </nav>
     </header>
     <main>
         <article>

@@ -9,6 +9,7 @@
     --negro : #202020;
 }
 
+/*___GENERAL___*/
 /*Hacemos referencia a todos los elementos de la pagina para asignarles la misma fuente de letra y demás atributos y no tener que ir repitiendo elemento a elemento*/
 *{
     font-family: var(--fuenteDeLetra);
@@ -38,7 +39,7 @@ a{
     top: 0;
     background-color: var(--negro);
     width: 100%;
-    height: auto;
+    height: 10%;
     display: flex;
     justify-content: center;
     
@@ -60,13 +61,6 @@ a{
         width: 30px;
     }
 }
-#navBarHome{
-    background-color: var(--whiteSmoke);
-    padding: 16px;
-    font-size: 18px;
-    border: none;
-    border-radius: 30px;
-}
 .inicio{
     display: flex;
     font-size: 18px;
@@ -79,18 +73,6 @@ a{
     left: 0;
     margin-left: 30px;
 }
-
-.buttonBanner{
-    color: var(--negro);
-    background-color: var(--color3);
-    margin-top: 50px;
-    padding: 20px;
-    border-radius: 50px;
-    font-size: 20px;
-} 
-
-
-
 
 
 /*___BOTÓN DROPDOWN___*/
@@ -109,7 +91,8 @@ a{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     border-radius: 6px;
-    margin-left:13px;
+    margin-left:13px; /*¡¡¡MIRAR ESTO!!! SE USA PARA CENTRAR EL DROPDOWN PERO NO FUNCIONA Y NO ES REPLICABLE*/
+    margin-top: 5px;
     button {
         background: none;
         border: none;
@@ -134,9 +117,31 @@ a{
         background-color: var(--color11);
     }
 }
+/*Para modificar el boton dropdown de los países para que no sea igual que el de idioma*/
+#botonCambioPaises{
+    background-color: var(--negro);
+    padding: 0;
+}
+/*Aquí se quita el espacio vacio a la izquierda de la lista, se centra el texto y se añade un padding de 1 vez el tamaño de fuente (em)*/
+#dropdown_ULPaises{
+    text-align: center;
+    padding-left: 0;
+    padding: 1em;
+}
 
 
 /*___BANNERS___*/
+/*Botón de Países en el banner principal*/
+.buttonBanner{
+    color: var(--negro);
+    background-color: var(--color3);
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 50px;
+    font-size: 20px;
+    box-shadow: 5px 5px 5px black; /*x-Offset, y-Offset, blur-radius, color */
+} 
+/*Plantilla General*/
 .bannerPlantilla{
     background-size: cover;
     background-position: center;
@@ -147,35 +152,37 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
+}
+h2{
+    font-size: 70px;
+}
+h1{
+    margin-top: -50px;
+    font-size: 30px;
+}
+.tituloBanners{
+    text-shadow:  5px 5px 2px black;
+}
+#banner{
+    background-image: url('resources/img/general/Principal1.jpg');
 
     h2{
-        font-size: 70px;
+        font-size: 100px;
     }
     h1{
-        margin-top: -50px;
-        font-size: 30px;
+        margin-top: -70px;
+        font-size: 40px;
     }
-    #banner{
-        background-image: url('resources/img/general/Principal1.jpg');
-    
-        h2{
-            font-size: 100px;
-        }
-        h1{
-            margin-top: -70px;
-            font-size: 40px;
-        }
-    } 
-    #banner1{
-        background-image: url('resources/img/destino1/Alemania.jpg');
-    }
-    #banner2{
-        background-image: url('resources/img/destino2/Italia.jfif');
-    }
-    #banner3{
-        background-image: url('resources/img/destino3/Mexico1.jfif');
-    }    
+} 
+#banner1{
+    background-image: url('resources/img/destino1/Alemania.jpg');
+}
+#banner2{
+    background-image: url('resources/img/destino2/Italia.jfif');
+}
+#banner3{
+    background-image: url('resources/img/destino3/Mexico1.jfif');
 }
 
 
@@ -244,7 +251,7 @@ a{
             max-width: 350px;
             border-radius: 20px;
         }
-        /*No se aplica el estilo general del .card*/
+        /*No se aplica el estilo general del .card, así que le hacemos referencia directa*/
         #pAboutUs{
             color: var(--color3);
         }
@@ -303,7 +310,7 @@ footer{
 
 
 
-
+/*???*/
 .titulo{
     font-size: 40px;
 }
@@ -312,7 +319,7 @@ footer{
     font-size: 20px;
 }
 
-/*Los precios salen en */
+/*Los precios salen en todos los textos relacionados con los destinos*/
 .precios{
     text-align: center ;
 }
