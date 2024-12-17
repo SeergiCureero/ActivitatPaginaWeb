@@ -5,6 +5,7 @@
     --color11: #3e8e41;
     --color2 : #ff7c00;
     --color3 : #F7F1E1;
+    --color4 : rgba(82, 81, 81, 0.219);
     --whiteSmoke : #F5F5F5;
     --negro : #202020;
 }
@@ -83,16 +84,16 @@ a{
     font-size: 18px;
     border: none;
     border-radius: 30px;
+    margin: 6px;
 }
 .dropdown-content {
     display: none;
-    position: absolute;
+    position: fixed;
+    margin-left: 13px;
     background-color: var(--color3);
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     border-radius: 6px;
-    margin-left:13px; /*¡¡¡MIRAR ESTO!!! SE USA PARA CENTRAR EL DROPDOWN PERO NO FUNCIONA Y NO ES REPLICABLE*/
-    margin-top: 5px;
     button {
         background: none;
         border: none;
@@ -194,11 +195,12 @@ h1{
     article{
         flex: 1 1 300px;
         max-width: 550px;
-        height:600px;
+        height:630px;
         padding: 20px;
         text-align: center; 
         border-radius: 30px;
-        background-color: var(--color1);
+        background-color: var(--color4);
+        color: var(--negro);
     
         h2{
             font-size: 40px;
@@ -211,17 +213,14 @@ h1{
             max-width: 350px;
             border-radius: 20px;
         }
-        .foto1{
+        .imgDestinyOffer{
             margin-top: -20px;
-            height: 240px;
+            height: 233px;
             max-width: 350px;
             border-radius: 20px;
         }
         h3{
             font-size: 30px;
-        }
-        a{
-            color: var(--negro);
         }
     }
 }
@@ -238,8 +237,8 @@ h1{
         padding: 20px;
         text-align: center; 
         border-radius: 30px;
-        background-color: var(--color1);
-        color: var(--color3);
+        background-color: var(--color4);
+        color: var(--negro);
         margin-top: -30px;
         margin-bottom: 50px;
         p{
@@ -253,7 +252,7 @@ h1{
         }
         /*No se aplica el estilo general del .card, así que le hacemos referencia directa*/
         #pAboutUs{
-            color: var(--color3);
+            color: var(--negro);
         }
     }
 }
