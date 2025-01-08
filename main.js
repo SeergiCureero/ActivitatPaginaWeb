@@ -28,7 +28,7 @@ const translationsWithPrizes = {
         pTitDestino2: `Viaja a Italia desde ${lowestPrizes[1]}€ todo incluido`,
         T2C1D2:`Pasea por donde caminaban los emperadores romanos por solo ${prizes.C1D2}€`,
         T2C2D2:`Tanto si buscas una ciudad medieval como una urbe moderna y europea, ¡Milán es tu ciudad! Visitala por solo ${prizes.C2D2}€`,
-        T2C3D2:`FLORENCIA ${prizes.C3D2}€`,
+        T1C3D2:`Además, es donde nació Dante. Por solo ${prizes.C3D2}€`,
     
         pTitDestino3: `Viaja a México con todo incluido desde ${lowestPrizes[2]}€.`,
         T2C1D3:`Descubre Ciudad de México desde ${prizes.C1D3}€ todo incluido.`,
@@ -48,7 +48,7 @@ const translationsWithPrizes = {
         pTitDestino2: `Viatja a Itàlia des de ${lowestPrizes[1]}€ tot inclòs`,
         T2C1D2:`Passeja  per on caminaven emperadors romans per sols ${prizes.C1D2}€`,
         T2C2D2:`Tant si busques una ciutat medieval o una metropoli moderna i europea, Milà és la teva ciutat! Visita-la per sols ${prizes.C2D2}€`,
-        T2C3D2:`FLORENCIA ${prizes.C3D2}€`,
+        T2C3D2:`A més, és on va néixer Dante. Per sols ${prizes.C3D2}€`,
     
         pTitDestino3: `Viatja a Mèxic amb tot inclos des de ${lowestPrizes[2]}€.`,
         T2C1D3:`Descobreix Ciudad de México des de ${prizes.C1D3}€ tot inclos.`,
@@ -62,19 +62,20 @@ const translationsWithPrizes = {
     },
     en:{
         pTitDestino1: `Travel to Germany for ${lowestPrizes[0]}€ all included`,
-        T1C1D1:`The capital of Bavaria, the home of the beer, and one of the cities with the most relevance in the recent history of Germany and the world. Enjoy in on of the thousands Biergarten of Munich for only ${prizes.C1D1}€`,
-        T1C2D1:`There is no city like Berlin. With just one trip you won't see all that there is to see, but with us you'll be one step closer for only ${prizes.C2D1}€`,
-        T1C3D1:`Carnival lover? Cologne has THE best carnival in all Europe. Enjoy an unforgettable carnival for only ${prizes.C3D1}€`,
+        T2C1D1:`Enjoy in on of the thousands Biergarten of Munich for only ${prizes.C1D1}€`,
+        T2C2D1:`Travel to Berlin for only ${prizes.C2D1}€`,
+        T2C3D1:`Enjoy an unforgettable carnival for only ${prizes.C3D1}€`,
     
         pTitDestino2: `Travel to Italy for ${lowestPrizes[1]}€ all included`,
-        T1C1D2:`It's said that all roads lead to Rome. The city that once served as capital of the Empire that surfed the waves of the Mediterranean sea for centuries, the birthplace of western culture and latin languages. You can feel and see all this influence in what is nowadays the capital of Italy. Go for a walk stepping on the same roads the emperors of Rome once walked uppon for only ${prizes.C1D2}€`,
-        T1C2D2:`The second biggest city in Italy. A city with a rich history and a gorgeous architecture. It doesn't matter if you're looking for a medieval big city or a modern an european metropolis, Milan is your city! Visit it for only ${prizes.C2D2}€`,
-        T1C3D2:`FLORENCIA ${prizes.C3D2}€`,
+        T2C1D2:`Go for a walk stepping on the same roads the emperors of Rome once walked uppon for only ${prizes.C1D2}€`,
+        T2C2D2:`Milan is your city! Visit it for only ${prizes.C2D2}€`,
+        T2C3D2:`Moreover, it's where Dante was born. For only ${prizes.C3D2}€`,
     
         pTitDestino3: `Travel to Mexico for ${lowestPrizes[2]}€ all included`,
-        T1C1D3:`${prizes.C1D3}€`,
-        T1C2D3:`${prizes.C2D3}€`,
-        T1C3D3:`${prizes.C3D3}€`,
+        T2C1D3:`Discover Mexico City from ${prizes.C1D3}€ all included.`,
+        T2C2D3:`Enjoy Texcoco de Mora from ${prizes.C2D3}€ all included.`,
+        T2C3D3:`Travel to Guadalajara from ${prizes.C3D3}€ all included.`,
+
 
         T1H1COUNTRIES:`Prizes starting at ${prizes.OtherOffers1}€`,
         T1H2COUNTRIES:`Prizes starting at ${prizes.OtherOffers2}€`,
@@ -191,6 +192,9 @@ function updateLanguage(data) {
             document.getElementById('C3D1').innerText = data[currentLang].C3D1;
             document.getElementById('T1C3D1').innerText = data[currentLang].T1C3D1;
             document.getElementById('T2C3D1').innerText = translationsWithPrizes[currentLang].T2C3D1;
+            document.getElementById('con1C1D1').childNodes[0].textContent = data[currentLang].TextForMoreInfo;
+            document.getElementById('con1C2D1').childNodes[0].textContent = data[currentLang].TextForMoreInfo;
+            document.getElementById('con1C3D1').childNodes[0].textContent = data[currentLang].TextForMoreInfo;
             break;
 
         case "destiny2Body":
@@ -210,6 +214,9 @@ function updateLanguage(data) {
             document.getElementById('C3D2').innerText = data[currentLang].C3D2;
             document.getElementById('T1C3D2').innerText = data[currentLang].T1C3D2;
             document.getElementById('T2C3D2').innerText = translationsWithPrizes[currentLang].T2C3D2;
+            document.getElementById('con1C1D2').childNodes[0].textContent = data[currentLang].TextForMoreInfo;
+            document.getElementById('con1C2D2').childNodes[0].textContent = data[currentLang].TextForMoreInfo;
+            document.getElementById('con1C3D2').childNodes[0].textContent = data[currentLang].TextForMoreInfo;
             break;
     
         case "destiny3Body":
