@@ -10,9 +10,9 @@ const prizes = {
     C1D3 : 60,      //CDMX, MX
     C2D3 : 3840,    //Texcoco de Mora, MX
     C3D3 : 184,     //Guadalajara, MX
-    OtherOffers1 : 30,
-    OtherOffers2 : 30,
-    OtherOffers3 : 30
+    OtherOffers1 : 1285, //Boston, USA
+    OtherOffers2 : 1575, //Medellin, COL
+    OtherOffers3 : 1780  //BBAA, ARG
 }
 var lowestPrizes = [];
 
@@ -128,6 +128,9 @@ function updateLanguage(data) {
     document.getElementById('botonCambioIdioma').innerText = data[currentLang].botonCambioIdioma;
     document.getElementById('navBarHome').innerText = data[currentLang].navBarHome;
     document.getElementById('navBarCountries').innerText = data[currentLang].navBarCountries;
+    document.getElementById('aDestinos1').innerText = data[currentLang].titDestino1;
+    document.getElementById('aDestinos2').innerText = data[currentLang].titDestino2;
+    document.getElementById('aDestinos3').innerText = data[currentLang].titDestino3;
     //Footer
     //Section "Footer"
     document.getElementById('pFooter').childNodes[0].textContent  = data[currentLang].pFooter;
@@ -243,10 +246,9 @@ function updateLanguage(data) {
             document.getElementById('H1COUNTRIES').innerText = data[currentLang].H1COUNTRIES;
             document.getElementById('H2COUNTRIES').innerText = data[currentLang].H2COUNTRIES;
             document.getElementById('H3COUNTRIES').innerText = data[currentLang].H3COUNTRIES;
-            document.getElementById('T1H1COUNTRIES').innerText = data[currentLang].T1H1COUNTRIES;
-            document.getElementById('T1H2COUNTRIES').innerText = data[currentLang].T1H2COUNTRIES;
-            document.getElementById('T1H3COUNTRIES').innerText = data[currentLang].T1H3COUNTRIES;
-            
+            document.getElementById('T1H1COUNTRIES').innerText = translationsWithPrizes[currentLang].T1H1COUNTRIES;
+            document.getElementById('T1H2COUNTRIES').innerText = translationsWithPrizes[currentLang].T1H2COUNTRIES;
+            document.getElementById('T1H3COUNTRIES').innerText = translationsWithPrizes[currentLang].T1H3COUNTRIES;
             break;
         case "TyCBody":
             document.getElementsByTagName('title').innerText = data[currentLang].pageNameTyC;
