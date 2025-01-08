@@ -4,12 +4,12 @@ const prizes = {
     C1D1 : 2199.99, //Münich, DE
     C2D1 : 1259.89, //Berlin, DE
     C3D1 : 1240.99, //Köln, DE
-    C1D2 : 893,      //Roma, IT
-    C2D2 : 567,     //Milano, IT
+    C1D2 : 2600,      //Roma, IT
+    C2D2 : 2000,     //Milano, IT
     C3D2 : 4530,      //Firenze, IT
-    C1D3 : 60,      //CDMX, MX
+    C1D3 : 3500,      //CDMX, MX
     C2D3 : 3840,    //Texcoco de Mora, MX
-    C3D3 : 184,     //Guadalajara, MX
+    C3D3 : 1579,     //Guadalajara, MX
     OtherOffers1 : 1285, //Boston, USA
     OtherOffers2 : 1575, //Medellin, COL
     OtherOffers3 : 1780  //BBAA, ARG
