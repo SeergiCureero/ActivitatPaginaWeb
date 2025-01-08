@@ -241,7 +241,7 @@ function updateLanguage(data) {
             document.getElementById('highlightedDestiny3').innerText = data[currentLang].highlightedDestiny3;
             document.getElementById('otherOffers').innerText = data[currentLang].otherOffers;
             document.getElementById('T1COUNTRIES').innerText = data[currentLang].T1COUNTRIES;
-            document.getElementById('T2COUNTRIES').childNodes[0].textContent = data[currentLang].T2COUNTRIES;
+            document.getElementById('T2COUNTRIES'). childNodes[0].textContent = data[currentLang].TextForMoreInfo;
             document.getElementById('TyCCOUNTRIES').innerText = data[currentLang].TyCCOUNTRIES;
             document.getElementById('H1COUNTRIES').innerText = data[currentLang].H1COUNTRIES;
             document.getElementById('H2COUNTRIES').innerText = data[currentLang].H2COUNTRIES;
