@@ -21,7 +21,7 @@ updatePrizes();
 const translationsWithPrizes = {
     es:{
         pTitDestino1: `Viaja a Alemania desde ${lowestPrizes[0]}€ todo incluido`,
-        T2C1D1:`Disfruta en uno de los mil Biergarten de Münich por solo ${(prizes.C1D1)}€`,
+        T2C1D1:`Disfruta en uno de los mil Biergarten de Munich por solo ${(prizes.C1D1)}€`,
         T2C2D1:`Viaja a Berlín por solo ${(prizes.C2D1)}`,
         T2C3D1:`Disfruta de un carnaval inolvidable por solo ${(prizes.C3D1)}€`,
     
@@ -42,7 +42,7 @@ const translationsWithPrizes = {
     ca:{
         pTitDestino1: `Viatja a Alemanya des de ${lowestPrizes[0]}€ tot inclòs`,
         T2C1D1:`Gaudeix a un dels milers Biergarten de Múnic per sols ${prizes.C1D1}€`,
-        T2C2D1:`Viatja a Berlín per sols 500€${prizes.C2D1}€`,
+        T2C2D1:`Viatja a Berlín per sols ${prizes.C2D1}€`,
         T2C3D1:`Gaudeix d'un carnaval inoblidable per sols ${prizes.C3D1}€`,
     
         pTitDestino2: `Viatja a Itàlia des de ${lowestPrizes[1]}€ tot inclòs`,
